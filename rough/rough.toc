@@ -1,8 +1,8 @@
-\contentsline {chapter}{Acknowledgements}{iv}
-\contentsline {chapter}{Abstract}{v}
+\contentsline {chapter}{Acknowledgements}{v}
+\contentsline {chapter}{Abstract}{vi}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Related Work}{2}
-\contentsline {chapter}{\numberline {3}Control Systems}{3}
+\contentsline {chapter}{\numberline {3}Smartphone Control Systems}{3}
 \contentsline {chapter}{\numberline {4}Human Factors Experiment Design}{4}
 \contentsline {chapter}{\numberline {5}Results}{5}
 \contentsline {chapter}{\numberline {6}Conclusion}{6}

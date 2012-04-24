@@ -7,6 +7,19 @@
 \title{Evaluation of Gesture-Based Controls for Robotic Systems}
 \begin{document}
 \maketitle
+%%%%%%%%%%%%%%%%%%%%%%% TODO LIST %%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\todo}[1]{
+    \addcontentsline{tdo}{todo}{\protect{#1}}
+    \marginpar{#1}
+}
+
+\makeatletter \newcommand \listoftodos{\section*{Todo list} \@starttoc{tdo}}
+  \newcommand\l@todo[2]
+    {\par\noindent \textit{#2}, \parbox{10cm}{#1}\par} \makeatother
+    
+    
+\listoftodos
+%%%%%%%%%%%%%%%%%%%%% END TODO LIST %%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setcounter{page}{1}
 \pagenumbering{roman}
@@ -35,16 +48,16 @@ The need for human-robot interfaces is increasing rapidly. The military has alre
 
 % "Interactions and Training with Unmanned Systems and the Nintendo Wiimote" (Varcholik, Barber, and Nicholson) describes a gesture based control system that uses the Nintendo Wiimote to determine arm/hand gestures and control a robot. They then conducted a study where subjects used Wiimote gesture system and a more standard system and filled out a survey to indicate how effective the Wiimote system was as compared to the standard system.
  
-%  I propose to create a gesture based system using a smartphone and conduct an experiment similar to Varcholik, Barber, and Nicholson, with one major difference: collecting survey data AND collecting data via biosensors. The system will use a Samsung Galaxy S II phone for the gesture-based input and a Microsoft XBOX 360 controller for the traditional input. Subjects will use the controls to guide a Roomba through an obstacle course. While subjects complete the experiment, their Blood Volume Pressure/Heart Rate and Galvanic Skin Response will be recorded. After the experiment is complete, subjects will also fill out a survey, and both sets of data will be used to determine which control scheme is more effective and intuitive.
+%  I propose to create a gesture based system using a smartphone and conduct an experiment similar to Varcholik, Barber, and Nicholson. The system will use a Samsung Galaxy S II phone for the gesture-based input and a Microsoft XBOX 360 controller for the traditional input. Subjects will use the controls to guide a Roomba through an obstacle course.After the experiment is complete, subjects will also fill out a survey, and both sets of data will be used to determine which control scheme is more effective and intuitive.
 
 %This paper makes the following contributions:
 %(1)  Introduces a gesture based control system using a smartphone.
 %(2)  Provides data showing physical reactions to different control systems in addition to survey results after the experiment.
 
-
 \chapter{Related Work}
 
-\chapter{Control Systems}
+\chapter{Smartphone Control Systems}
+
 
 \chapter{Human Factors Experiment Design}
 
