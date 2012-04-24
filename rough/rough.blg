@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: rough.aux
+The style file: plain.bst
+Database file #1: rough.bib
+Warning--can't use both volume and number fields in Varcholik_Barber_Nicholson_2008
+Warning--empty year in Varcholik_Barber_Nicholson_2008
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            505 strings with 4273 characters,
+and the built_in function-call counts, 431 in all, are:
+= -- 38
+> -- 18
+< -- 2
++ -- 7
+- -- 6
+* -- 34
+:= -- 70
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 18
+empty$ -- 33
+format.name$ -- 6
+if$ -- 90
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 5
+quote$ -- 0
+skip$ -- 12
+stack$ -- 0
+substring$ -- 21
+swap$ -- 8
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2
+warning$ -- 2
+while$ -- 5
+width$ -- 2
+write$ -- 13
+(There were 2 warnings)
