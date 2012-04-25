@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  24 APR 2012 18:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  24 APR 2012 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -165,6 +165,26 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 
 ]
 Chapter 1.
+
+Overfull \hbox (12.3259pt too wide) in paragraph at lines 51--51
+[]\OT1/cmr/m/n/12 elaborate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+\OT1/cmr/m/n/12 on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+\OT1/cmr/m/n/12 data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+\OT1/cmr/m/n/12 anal-y-
+ []
+
 [1
 
 ]
@@ -173,6 +193,21 @@ Chapter 2.
 
 ]
 Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]\OT1/cmr/m/n/12 Think
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\OT1/cmr/m/n/12 of a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\OT1/cmr/m/n/12 bet-ter
+ []
+
 [3
 
 ]
@@ -193,10 +228,10 @@ Chapter 6.
 Here is how much of TeX's memory you used:
  1209 strings out of 493634
  13730 string characters out of 3143401
- 63042 words of memory out of 3000000
+ 64042 words of memory out of 3000000
  4528 multiletter control sequences out of 15000+200000
  13049 words of font info for 50 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  27i,6n,22p,771b,182s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rough.dvi (14 pages, 5512 bytes).
+Output written on rough.dvi (14 pages, 10220 bytes).
