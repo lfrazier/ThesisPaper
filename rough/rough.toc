@@ -1,17 +1,18 @@
-\contentsline {chapter}{Acknowledgements}{v}
-\contentsline {chapter}{Abstract}{vi}
+\contentsline {chapter}{Acknowledgements}{iv}
+\contentsline {chapter}{Abstract}{v}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {chapter}{\numberline {2}Related Work}{2}
-\contentsline {chapter}{\numberline {3}Smartphone Control Systems}{3}
-\contentsline {section}{\numberline {3.1}Cellbots}{3}
-\contentsline {section}{\numberline {3.2}Gesture-Based Control App}{3}
-\contentsline {chapter}{\numberline {4}Human Factors Experiment Design}{4}
-\contentsline {section}{\numberline {4.1}Platform}{4}
-\contentsline {section}{\numberline {4.2}Track Design}{4}
-\contentsline {section}{\numberline {4.3}Questionnaire Design}{4}
-\contentsline {section}{\numberline {4.4}Experiment Procedure}{4}
-\contentsline {chapter}{\numberline {5}Results}{5}
-\contentsline {section}{\numberline {5.1}Raw Data}{5}
-\contentsline {section}{\numberline {5.2}Questionnaire Data}{5}
-\contentsline {section}{\numberline {5.3}Analysis}{5}
-\contentsline {chapter}{\numberline {6}Conclusion}{6}
+\contentsline {chapter}{\numberline {2}Related Work}{3}
+\contentsline {chapter}{\numberline {3}Implementation of Control Systems}{4}
+\contentsline {section}{\numberline {3.1}XBOX 360 Controller}{4}
+\contentsline {section}{\numberline {3.2}Cellbots Application}{5}
+\contentsline {section}{\numberline {3.3}Gesture-Based Control Application}{5}
+\contentsline {chapter}{\numberline {4}Human Factors Experiment Design}{7}
+\contentsline {section}{\numberline {4.1}Platform}{7}
+\contentsline {section}{\numberline {4.2}Track Design}{7}
+\contentsline {section}{\numberline {4.3}Questionnaire Design}{7}
+\contentsline {section}{\numberline {4.4}Experiment Procedure}{7}
+\contentsline {chapter}{\numberline {5}Results}{8}
+\contentsline {section}{\numberline {5.1}Time Trials}{8}
+\contentsline {section}{\numberline {5.2}Questionnaire}{8}
+\contentsline {section}{\numberline {5.3}Analysis and Hypothesis}{8}
+\contentsline {chapter}{\numberline {6}Conclusion}{9}

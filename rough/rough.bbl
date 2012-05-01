@@ -1,5 +1,18 @@
 \begin{thebibliography}{1}
 
+\bibitem{iRobot}
+iRobot Corporation.
+\newblock irobot roomba serial command interface (sci) specification, 2005.
+
+\bibitem{RoombaSCI}
+K.~Jacobson.
+\newblock Python library for the roomba sci, 2008.
+
+\bibitem{TaKG}
+Robert Nesselrath.
+\newblock Takg - ein toolkit zur automatischen klassifikation von gesten.
+\newblock Master's thesis, University of Saarland, 2008.
+
 \bibitem{Varcholik_Barber_Nicholson_2008}
 Paul Varcholik, Daniel Barber, and Denise Nicholson.
 \newblock {\em Interactions and Training with Unmanned Systems and the Nintendo
