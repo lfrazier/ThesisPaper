@@ -74,13 +74,14 @@ outperformed the keyboard.
 In this chapter, I will describe the implementation of the four control systems used in the experiment. First, I describe the ``standard" XBOX 360 controller setup, then the application used for the D-Pad and tilt controllers, and finally the gesture-based control application.
 
 The robot in question is an iRobot Roomba 560 vacuum  cleaner. None of the four control schemes require making modifications to the Roomba, and the vacuum/brushes are turned off during the experiment. It is controlled from a standard wireless Microsoft XBOX 360 controller and a Samsung Galaxy S II Android phone.
+\todo{photo of roomba and phone}
 \section{XBOX 360 Controller}
 The XBOX 360 controls for the Roomba are written in Python (see Appendix). The program uses a library called RoombaSCI to communicate with the Roomba via Bluetooth. RoombaSCI is a Python wrapper for iRobot's Serial Command Interface Specification, which allows commands to be sent to the Roomba through its serial port. RoombaSCI abstracts tasks like setting up the connection and sending bytes to specific motors into commands like ``forward", ``stop", and ``spin left" \cite{RoombaSCI}. It also allows the programmer to set the speed of the Roomba within the range allowed by the hardware (-500 - 500 mm/s). \cite{iRobot}
 
 A RooTooth bluetooth-serial adapter was used to communicate with the computer wirelessly. The Pygame library is also used to properly capture the input from the controller. 
 
 The end result is a controller that can be used to move forward/backward and rotate to the left or right in place. The right trigger sends the ``forward" command, the left trigger sends ``backward", and the left analog stick pressed to the left or right sends a ``left" or ``right" command. The robot continues moving forward/backward/left/right as long as the trigger or analog stick is held, and will stop when it is released, or another button is pressed. When using the XBOX 360 controller, the robot can only move at the maximum speed, and it can only perform one of forward/backward or rotation at any given time (forward motion must stop in order to turn).
-\todo{xbox photo}
+\todo{xbox diagram}
 
 \section{Cellbots Application}
 The D-Pad and the tilt controls were downloaded to the phone as part of a single app called Cellbots. Cellbots is an open source Android application, available for free online or in the Android Market. The app comes with four control schemes, including the D-Pad controls and the tilt controls. It also included voice controls and an on-screen Atari-style joystick which were not used in the experiments but could be utilized in future research.
@@ -104,15 +105,15 @@ After exiting ``learning mode", the phone begins recognizing gestures immediatel
 
 The distance calculation from Gesture $a$ to Gesture $b$ is done through the Dynamic Time Warping algorithm (see Appendix for source code). A $a.length \times b.length$ matrix of floats, $dist$, is constructed, where entry $dist(i,j)$ is the norm of the $i$th vector in $a$ minus the $j$th vector in $b$. A second matrix of the same size, $cost$, is constructed so that the first column of $cost$ is the same as the first column of $dist$, and the rest of the entries are 0.
 
-The $cost$ matrix is filled in dynamically from the top left ($cost(0, 0)$) to the bottom right ($cost(a.length, b.length)$), iterating over columns first, then rows. To compute $cost(i, j)$, the current minimum cost is computed as $minCost = cost(i - 1, j - 1) + dist(i, j)$. This is the value assigned to $cost(i, j)$. If $cost(i - 1, j) + dist(i, j) < minCost$ or $cost(i, j - 1) + dist(i, j) < minCost$, an additional offset penalty of 0.5 is added to $cost(i, j)$.
+The $cost$ matrix is filled in dynamically from the top left ($cost(0, 0)$) to the bottom right ($cost(a.length, b.length)$), iterating over columns first, then rows. To compute $cost(i, j)$, the current minimum cost is computed as \[minCost = cost(i - 1, j - 1) + dist(i, j)\] This is the value assigned to $cost(i, j)$. If $cost(i - 1, j) + dist(i, j) < minCost$ or $cost(i, j - 1) + dist(i, j) < minCost$, an additional offset penalty of 0.5 is added to $cost(i, j)$.
 
-After the whole $cost$ matrix has been filled in, the entry $cost(a.length - 1, b.length - 1)$ (the bottom right corner), is the minimum distance between the two Gestures $a$ and $b$. The stored Gesture with the smallest distance from the performed Gesture is the one that is selected to be sent to the Roomba. The last step is to check what that distance was, and if it was below a certain threshold then the command would be sent, otherwise no command is sent. This is to ensure that all commands sent were close matches, since every gesture must return a match with a stored gesture. If the closest match has a high distance, it is not close enough to be executed as a command.
+After the whole $cost$ matrix has been filled in, the entry $cost(a.length - 1, b.length - 1)$ (the bottom right corner), is the minimum distance between the two Gestures $a$ and $b$. The stored Gesture with the smallest distance from the performed Gesture is the one that is selected to be sent to the Roomba. The last step is to check that distance against a threshold. If the distance is less than the threshold, then the command would be sent, otherwise no command is sent. This is to ensure that all commands sent were close matches, since every gesture will return a match with some stored gesture, even if there are no similar gestures. If the closest match has a high distance, it is not close enough to be executed as a command so it is ignored.
 
 This code was integrated into Cellbots as another control view, to ensure that the same speeds/timing would be used for each control scheme on the phone.
 \todo{screenshot}
 
 The gestures defined were ``forward", ``backward", ``left", and ``right". 
-\todo{pictures of gestures}
+\todo{photos of gestures}
 All the gestures are performed with the phone's screen facing the user. The ``stop" command was left as an on-screen button, rather than a gesture, to make it easier for the subject to maintain control (and for the sake of the hardware and testing environment).
 
 \chapter{Human Factors Experiment Design}
