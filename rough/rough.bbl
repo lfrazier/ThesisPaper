@@ -22,16 +22,33 @@ iRobot Corporation.
 K.~Jacobson.
 \newblock Python library for the roomba sci, 2008.
 
+\bibitem{Kahn}
+R.E. Kahn, M.J. Swain, P.N. Prokopowicz, and R.J. Firby.
+\newblock Gesture recognition using the perseus architecture.
+\newblock In {\em Computer Vision and Pattern Recognition, 1996. Proceedings
+  CVPR '96, 1996 IEEE Computer Society Conference on}, pages 734 --741, jun
+  1996.
+
 \bibitem{Kestler}
 H.A. Kestler, M.~Borst, and H.~Neumann.
 \newblock {\em Einfache Handgestikerkennung mit einem zweistufigen
   Nearest-Neighbour-Klassifikator; SMART Ulm}.
 \newblock Report. Univ., SFB 527, 1999.
 
+\bibitem{Kortenkamp}
+David Kortenkamp, Eric Huber, R.~Peter Bonasso, and Metrica Inc.
+\newblock Recognizing and interpreting gestures on a mobile robot.
+\newblock In {\em In Proceedings of AAAI-96}, pages 915--921. AAAI Press/The
+  MIT Press, 1996.
+
 \bibitem{TaKG}
 Robert Nesselrath.
 \newblock Takg - ein toolkit zur automatischen klassifikation von gesten.
 \newblock Master's thesis, University of Saarland, 2008.
+
+\bibitem{MarioCircuit}
+Ltd. Nintendo~Co.
+\newblock Mario kart 64 instruction booklet, 1997.
 
 \bibitem{Rogalla}
 Rogalla, Ehrenmann, Zollner, Becher, and Dillman.

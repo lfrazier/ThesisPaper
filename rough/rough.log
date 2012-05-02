@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  2 MAY 2012 04:38
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  2 MAY 2012 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -169,104 +169,115 @@ Chapter 2.
 ] [4]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 []\OT1/cmr/m/n/12 photo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \OT1/cmr/m/n/12 of
  []
 
 
-Overfull \hbox (3.51349pt too wide) in paragraph at lines 77--77
+Overfull \hbox (3.51349pt too wide) in paragraph at lines 78--78
 \OT1/cmr/m/n/12 roomba
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 \OT1/cmr/m/n/12 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
 []\OT1/cmr/m/n/12 xbox
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
 \OT1/cmr/m/n/12 di-a-
  []
 
 [5
 
 ]
-Overfull \hbox (22.63968pt too wide) in paragraph at lines 88--88
+Overfull \hbox (22.63968pt too wide) in paragraph at lines 89--89
 []\OT1/cmr/m/n/12 screenshots
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 []\OT1/cmr/m/n/12 phone
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 \OT1/cmr/m/n/12 axis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 \OT1/cmr/m/n/12 di-a-
  []
 
 
-Overfull \hbox (18.005pt too wide) in paragraph at lines 97--97
+Overfull \hbox (18.005pt too wide) in paragraph at lines 98--98
 []\OT1/cmr/m/n/12 screenshot
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
 \OT1/cmr/m/n/12 ture-
  []
 
 [6] [7]
-Overfull \hbox (18.005pt too wide) in paragraph at lines 113--113
+Overfull \hbox (18.005pt too wide) in paragraph at lines 114--114
 []\OT1/cmr/m/n/12 screenshot 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []\OT1/cmr/m/n/12 photos
  []
+
+
+LaTeX Warning: Marginpar on page 8 moved.
 
 [8]
 Chapter 4.
 
-Overfull \hbox (5.53708pt too wide) in paragraph at lines 124--124
+Overfull \hbox (5.53708pt too wide) in paragraph at lines 127--127
 []\OT1/cmr/m/n/12 pictures 
  []
 
 [9
 
-] [10]
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 133.
+
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
+ [10] [11]
 Chapter 5.
-[11
+[12
 
 ]
 Chapter 6.
-(./rough.bbl [12
+(./rough.bbl [13
 
-] [13
+] [14
 
-]) [14] (./rough.aux) ) 
+]) [15] (./rough.aux) ) 
 Here is how much of TeX's memory you used:
- 1217 strings out of 493634
- 13812 string characters out of 3143401
+ 1239 strings out of 493634
+ 14167 string characters out of 3143401
  67042 words of memory out of 3000000
- 4538 multiletter control sequences out of 15000+200000
- 13401 words of font info for 51 fonts, out of 3000000 for 9000
+ 4556 multiletter control sequences out of 15000+200000
+ 13570 words of font info for 52 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 27i,6n,22p,918b,209s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,22p,1056b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rough.dvi (20 pages, 30184 bytes).
+Output written on rough.dvi (21 pages, 35608 bytes).

@@ -7,48 +7,50 @@ Warning--entry type for "iRobot" isn't style-file defined
 --line 4 of file rough.bib
 Warning--entry type for "RoombaSCI" isn't style-file defined
 --line 25 of file rough.bib
+Warning--entry type for "MarioCircuit" isn't style-file defined
+--line 130 of file rough.bib
 Warning--empty journal in Rogalla
 Warning--can't use both volume and number fields in Varcholik_Barber_Nicholson_2008
 Warning--empty year in Varcholik_Barber_Nicholson_2008
-You've used 10 entries,
+You've used 13 entries,
             2118 wiz_defined-function locations,
-            565 strings with 5700 characters,
-and the built_in function-call counts, 3643 in all, are:
-= -- 361
-> -- 142
-< -- 7
-+ -- 57
-- -- 46
-* -- 226
-:= -- 565
-add.period$ -- 31
-call.type$ -- 10
-change.case$ -- 51
+            584 strings with 6222 characters,
+and the built_in function-call counts, 4901 in all, are:
+= -- 486
+> -- 195
+< -- 9
++ -- 78
+- -- 64
+* -- 301
+:= -- 747
+add.period$ -- 40
+call.type$ -- 13
+change.case$ -- 69
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 150
-empty$ -- 301
-format.name$ -- 46
-if$ -- 803
+cite$ -- 16
+duplicate$ -- 205
+empty$ -- 407
+format.name$ -- 64
+if$ -- 1091
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 9
-newline$ -- 52
-num.names$ -- 20
-pop$ -- 72
+int.to.str$ -- 13
+missing$ -- 11
+newline$ -- 66
+num.names$ -- 26
+pop$ -- 100
 preamble$ -- 1
-purify$ -- 43
+purify$ -- 58
 quote$ -- 0
-skip$ -- 129
+skip$ -- 179
 stack$ -- 0
-substring$ -- 244
-swap$ -- 54
-text.length$ -- 7
+substring$ -- 324
+swap$ -- 79
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
+type$ -- 48
 warning$ -- 3
-while$ -- 31
-width$ -- 12
-write$ -- 111
-(There were 5 warnings)
+while$ -- 42
+width$ -- 15
+write$ -- 142
+(There were 6 warnings)

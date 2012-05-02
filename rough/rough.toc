@@ -8,11 +8,11 @@
 \contentsline {section}{\numberline {3.3}Gesture-Based Control Application}{6}
 \contentsline {chapter}{\numberline {4}Human Factors Experiment Design}{9}
 \contentsline {section}{\numberline {4.1}Platform and Hardware}{9}
-\contentsline {section}{\numberline {4.2}Track Design}{9}
+\contentsline {section}{\numberline {4.2}Track Design}{10}
 \contentsline {section}{\numberline {4.3}Questionnaire Design}{10}
-\contentsline {section}{\numberline {4.4}Experiment Procedure}{10}
-\contentsline {chapter}{\numberline {5}Results}{11}
-\contentsline {section}{\numberline {5.1}Time Trials}{11}
-\contentsline {section}{\numberline {5.2}Questionnaire}{11}
-\contentsline {section}{\numberline {5.3}Analysis and Hypothesis}{11}
-\contentsline {chapter}{\numberline {6}Conclusion}{12}
+\contentsline {section}{\numberline {4.4}Experiment Procedure}{11}
+\contentsline {chapter}{\numberline {5}Results}{12}
+\contentsline {section}{\numberline {5.1}Time Trials}{12}
+\contentsline {section}{\numberline {5.2}Questionnaire}{12}
+\contentsline {section}{\numberline {5.3}Analysis and Hypothesis}{12}
+\contentsline {chapter}{\numberline {6}Conclusion}{13}
