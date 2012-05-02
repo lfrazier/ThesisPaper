@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  2 MAY 2012 00:31
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  2 MAY 2012 04:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -242,19 +242,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--116
 
 [8]
 Chapter 4.
+
+Overfull \hbox (5.53708pt too wide) in paragraph at lines 124--124
+[]\OT1/cmr/m/n/12 pictures 
+ []
+
 [9
 
-]
+] [10]
 Chapter 5.
-[10
+[11
 
 ]
 Chapter 6.
-(./rough.bbl [11
+(./rough.bbl [12
 
-] [12
+] [13
 
-]) [13] (./rough.aux) ) 
+]) [14] (./rough.aux) ) 
 Here is how much of TeX's memory you used:
  1217 strings out of 493634
  13812 string characters out of 3143401
@@ -264,4 +269,4 @@ Here is how much of TeX's memory you used:
  831 hyphenation exceptions out of 8191
  27i,6n,22p,918b,209s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rough.dvi (19 pages, 28140 bytes).
+Output written on rough.dvi (20 pages, 30184 bytes).
