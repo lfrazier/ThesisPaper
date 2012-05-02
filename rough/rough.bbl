@@ -1,4 +1,18 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{GoodrichOlsen}
+M.A. Goodrich and Jr. Olsen, D.R.
+\newblock Seven principles of efficient human robot interaction.
+\newblock In {\em Systems, Man and Cybernetics, 2003. IEEE International
+  Conference on}, volume~4, pages 3942 -- 3948 vol.4, oct. 2003.
+
+\bibitem{Guo}
+Cheng Guo and Ehud Sharlin.
+\newblock Exploring the use of tangible user interfaces for human-robot
+  interaction: a comparative study.
+\newblock In {\em Proceedings of the twenty-sixth annual SIGCHI conference on
+  Human factors in computing systems}, CHI '08, pages 121--130, New York, NY,
+  USA, 2008. ACM.
 
 \bibitem{iRobot}
 iRobot Corporation.
@@ -8,15 +22,38 @@ iRobot Corporation.
 K.~Jacobson.
 \newblock Python library for the roomba sci, 2008.
 
+\bibitem{Kestler}
+H.A. Kestler, M.~Borst, and H.~Neumann.
+\newblock {\em Einfache Handgestikerkennung mit einem zweistufigen
+  Nearest-Neighbour-Klassifikator; SMART Ulm}.
+\newblock Report. Univ., SFB 527, 1999.
+
 \bibitem{TaKG}
 Robert Nesselrath.
 \newblock Takg - ein toolkit zur automatischen klassifikation von gesten.
 \newblock Master's thesis, University of Saarland, 2008.
+
+\bibitem{Rogalla}
+Rogalla, Ehrenmann, Zollner, Becher, and Dillman.
+\newblock Using gesture and speech control for commanding a robot assistant.
+\newblock 2002.
 
 \bibitem{Varcholik_Barber_Nicholson_2008}
 Paul Varcholik, Daniel Barber, and Denise Nicholson.
 \newblock {\em Interactions and Training with Unmanned Systems and the Nintendo
   Wiimote}, volume 2008, pages 1--9.
 \newblock NTSA.
+
+\bibitem{Waldherr}
+Stefan Waldherr, Roseli Romero, and Sebastian Thrun.
+\newblock A gesture based interface for human-robot interaction.
+\newblock {\em Autonomous Robots}, 9:151--173, 2000.
+\newblock 10.1023/A:1008918401478.
+
+\bibitem{YancoDrury}
+H.A. Yanco and J.~Drury.
+\newblock Classifying human-robot interaction: an updated taxonomy.
+\newblock In {\em Systems, Man and Cybernetics, 2004 IEEE International
+  Conference on}, volume~3, pages 2841 -- 2846 vol.3, oct. 2004.
 
 \end{thebibliography}

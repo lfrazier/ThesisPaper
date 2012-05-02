@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  1 MAY 2012 14:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=latex 2011.7.3)  2 MAY 2012 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -166,92 +166,77 @@ Chapter 1.
 Chapter 2.
 [3
 
-]
+] [4]
 Chapter 3.
 
-LaTeX Warning: Citation `RoombaSCI' on page 4 undefined on input line 69.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
 []\OT1/cmr/m/n/12 xbox
  []
 
-[4
+[5
 
 ]
-Overfull \hbox (22.63968pt too wide) in paragraph at lines 78--78
+Overfull \hbox (22.63968pt too wide) in paragraph at lines 87--87
 []\OT1/cmr/m/n/12 screenshots
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 []\OT1/cmr/m/n/12 phone
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \OT1/cmr/m/n/12 axis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 \OT1/cmr/m/n/12 di-a-
  []
 
 
-Overfull \hbox (18.005pt too wide) in paragraph at lines 86--86
+Overfull \hbox (18.005pt too wide) in paragraph at lines 96--96
 []\OT1/cmr/m/n/12 screenshot
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
 \OT1/cmr/m/n/12 ture-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\OT1/cmr/m/n/12 trainer
+[6] [7]
+Overfull \hbox (18.005pt too wide) in paragraph at lines 112--112
+[]\OT1/cmr/m/n/12 screenshot 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\OT1/cmr/m/n/12 and
+Overfull \hbox (5.53708pt too wide) in paragraph at lines 115--115
+[]\OT1/cmr/m/n/12 pictures
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-\OT1/cmr/m/n/12 cell-
- []
-
-[5] [6]
+[8]
 Chapter 4.
-[7
+[9
 
 ]
 Chapter 5.
-[8
+[10
 
 ]
 Chapter 6.
-(./rough.bbl [9
+(./rough.bbl [11
 
-]) [10
+] [12
 
-] (./rough.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+]) [13] (./rough.aux) ) 
 Here is how much of TeX's memory you used:
- 1211 strings out of 493634
- 13752 string characters out of 3143401
+ 1217 strings out of 493634
+ 13812 string characters out of 3143401
  66042 words of memory out of 3000000
- 4532 multiletter control sequences out of 15000+200000
+ 4538 multiletter control sequences out of 15000+200000
  13401 words of font info for 51 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 27i,6n,22p,918b,182s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,22p,918b,209s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rough.dvi (16 pages, 18524 bytes).
+Output written on rough.dvi (19 pages, 27964 bytes).

@@ -4,50 +4,51 @@ The top-level auxiliary file: rough.aux
 The style file: plain.bst
 Database file #1: rough.bib
 Warning--entry type for "iRobot" isn't style-file defined
---line 3 of file rough.bib
+--line 4 of file rough.bib
 Warning--entry type for "RoombaSCI" isn't style-file defined
---line 24 of file rough.bib
+--line 25 of file rough.bib
+Warning--empty journal in Rogalla
 Warning--can't use both volume and number fields in Varcholik_Barber_Nicholson_2008
 Warning--empty year in Varcholik_Barber_Nicholson_2008
-You've used 4 entries,
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            519 strings with 4536 characters,
-and the built_in function-call counts, 1019 in all, are:
-= -- 93
-> -- 39
-< -- 2
-+ -- 16
-- -- 12
-* -- 53
-:= -- 174
-add.period$ -- 10
-call.type$ -- 4
-change.case$ -- 17
+            565 strings with 5700 characters,
+and the built_in function-call counts, 3643 in all, are:
+= -- 361
+> -- 142
+< -- 7
++ -- 57
+- -- 46
+* -- 226
+:= -- 565
+add.period$ -- 31
+call.type$ -- 10
+change.case$ -- 51
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 40
-empty$ -- 91
-format.name$ -- 12
-if$ -- 214
+cite$ -- 13
+duplicate$ -- 150
+empty$ -- 301
+format.name$ -- 46
+if$ -- 803
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 2
-newline$ -- 21
-num.names$ -- 8
-pop$ -- 32
+int.to.str$ -- 10
+missing$ -- 9
+newline$ -- 52
+num.names$ -- 20
+pop$ -- 72
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 43
 quote$ -- 0
-skip$ -- 34
+skip$ -- 129
 stack$ -- 0
-substring$ -- 36
-swap$ -- 10
-text.length$ -- 2
+substring$ -- 244
+swap$ -- 54
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
-warning$ -- 2
-while$ -- 11
-width$ -- 5
-write$ -- 40
-(There were 4 warnings)
+type$ -- 36
+warning$ -- 3
+while$ -- 31
+width$ -- 12
+write$ -- 111
+(There were 5 warnings)

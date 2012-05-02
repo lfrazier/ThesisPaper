@@ -59,7 +59,16 @@ This thesis introduces an inexpensive gesture based control system that uses com
 The rest of this thesis is organized as follows. In the next chapter, I present a taxonomy of related work. Chapter 3 provides implementation details for the different controls. Chapter 4 describes the design of the human factors experiment, including choice of hardware, track design, experimental procedure, and the questionnaire. In Chapter 5, I analyze and discuss the results of the experiment. Chapter 6 provides the conclusion and a brief summary. 
 
 \chapter{Related Work}
-While this paper has most of its origin in \cite{Varcholik_Barber_Nicholson_2008}, there is a large body of work about robotic control systems that led up to this point.
+While this paper has most of its origin in \cite{Varcholik_Barber_Nicholson_2008}, there are a few differences. \cite{Varcholik_Barber_Nicholson_2008} uses a Nintendo Wiimote to control the actions of the robot, rather than a smartphone or XBOX controller. In the case of the smartphone, computation of gestures is performed on the phone, rather than on an intermediate computer.
+
+There is a large body of work about robotic control systems that led up to this point.  \cite{Varcholik_Barber_Nicholson_2008} references three papers in human-robot interaction: \cite{Waldherr}, \cite{Rogalla}, and \cite{Guo}. \cite{Waldherr} presents a computer vision based approach to human-robot communication where the computation is done onboard the robot. \cite{Rogalla} presents work on using both gestures and speech. The speech commands are used to augment and clarify the hand gesture commands. \cite{Guo} presents work on using the Wiimote to control a robotic dog, even showing that the Wiimote
+outperformed the keyboard.
+
+\cite{Waldherr} takes a computer vision based approach to gesture recognition. It explores several methods like template-based matching and neural networks. It is derived from several other vision-based works, like Kortenkamp, which used optical flow to recognize up to 6 gestures, and Kahn, which recognizes pointing gestures using feature maps and the color of the user's clothing.
+
+\cite{Rogalla} integrates speech recognition into the system, but it also uses a computer vision based gesture recognizer. It draws from \cite{Kestler}, which recognizes static hand gestures from still photos, and CORA, a robotic assistant that uses speech and deictic gestures to execute commands (ex. ``Turn and face me").
+
+\cite{Guo} uses a Wiimote to control a Sony AIBO robotic dog. It describes a guide to designing effective human-robot interface \cite{GoodrichOlsen}. It also describes \cite{YancoDrury}, which classifies and details robotic control schemes and defines terminology related to HRI. \cite{YancoDrury} defines the autonomy level of a robot as the percentage of the time that the robot carries out a task on its own (as opposed to intervention from the operator). Like \cite{Guo}, this paper deals with a robot with a low autonomy level.
 
 \chapter{Implementation of Control Systems}
 In this chapter, I will describe the implementation of the four control systems used in the experiment. First, I describe the ``standard" XBOX 360 controller setup, then the application used for the D-Pad and tilt controllers, and finally the gesture-based control application.
@@ -74,7 +83,7 @@ The end result is a controller that can be used to move forward/backward and rot
 \todo{xbox photo}
 
 \section{Cellbots Application}
-The D-Pad and the tilt controls were downloaded to the phone as part of a single app called Cellbots. Cellbots is an open source Android application, available for free online or in the Android Market. The app comes with several control schemes, including the D-Pad controls and the tilt controls. It also included voice controls and an on-screen Atari-style joystick which were not used in the experiments but could be utilized in future research.
+The D-Pad and the tilt controls were downloaded to the phone as part of a single app called Cellbots. Cellbots is an open source Android application, available for free online or in the Android Market. The app comes with four control schemes, including the D-Pad controls and the tilt controls. It also included voice controls and an on-screen Atari-style joystick which were not used in the experiments but could be utilized in future research.
 \todo{screenshots of cellbots}
 
 The D-Pad controls require the user to press one of four on-screen buttons, arranged in a cross. Like the XBOX 360 controller, the robot moves forward/backward and rotates in place when the appropriate button is held down, stopping when the button is released. Also like the XBOX 360 controller, the D-Pad only allows one speed and one type of movement at a time.
@@ -82,9 +91,29 @@ The D-Pad controls require the user to press one of four on-screen buttons, arra
 The tilt controls use the phone's accelerometers to control the robot. The user holds the phone horizontally (screen facing up) and holds down an on-screen button. While the button is held down, tilting the phone forward (rotation around its x-axis) causes the robot to begin to drive forward. The phone can be rolled right or left (rotating around its y-axis) to steer. 
 \todo{phone axis diagram}
 The tilt controls differ from the other controls in two ways: first, the speed can vary. The more the phone is tilted forward, the faster the robot moves, up to the maximum speed of 500 mm/s.  The second difference is that the tilt controls allow forward/backward motion and turning at the same time. For example, if the phone is tilted forward and rolled left, the robot will perform a left turn, rather than rotating in place.
+
 \section{Gesture-Based Control Application}
-The gesture-based controls are implemented on top of the existing Cellbots application. Cellbots is an open source application, so the gesture controls were added as a fifth control type. \todo{screenshot of gesturetrainer and cellbots}
+The gesture-based controls are implemented on top of the existing Cellbots application. Cellbots is an open source application, so the gesture controls were added as a fifth control type. \todo{screenshot of gesturetrainer}
 To recognize the gestures using accelerometers only, I turned to another open source Android application called GestureTrainer. GestureTrainer is an implementation of the concepts outlined in \cite{TaKG} for gesture recognition using accelerometer data.
+
+Users can record and name their own gestures on the phone, and from then on when the gesture is performed and recognized, the name is sent to the Roomba. The phone recognizes gestures continuously, without the need to specify when the user is about to perform a gesture.
+
+To record a gesture, the user presses a button to start ``learning mode". The phone receives a constant stream of events for every movement that the accelerometer picks up in the form of a vector of floats, ($\Delta x, \Delta y, \Delta z$). If the norm of the vector is above a certain threshold, the movement is considered ``significant" and the app begins recording the stream of vectors. When the phone receives 10 events in a row whose norms do not exceed the threshold, the gesture is determined to be complete. The list of xyz-vectors is stored as a Gesture object, and given the name specified by the user. 
+
+After exiting ``learning mode", the phone begins recognizing gestures immediately. When a gesture is detected, it is stored in a Gesture object, and sampled by one of several different feature extractors. The feature extractors serve to divide the gesture into a certain number of vectors, or normalize the values in the vectors. We then compute the distance between this sampled signal and each of the user's recorded gestures.
+
+The distance calculation from Gesture $a$ to Gesture $b$ is done through the Dynamic Time Warping algorithm (see Appendix for source code). A $a.length \times b.length$ matrix of floats, $dist$, is constructed, where entry $dist(i,j)$ is the norm of the $i$th vector in $a$ minus the $j$th vector in $b$. A second matrix of the same size, $cost$, is constructed so that the first column of $cost$ is the same as the first column of $dist$, and the rest of the entries are 0.
+
+The $cost$ matrix is filled in dynamically from the top left ($cost(0, 0)$) to the bottom right ($cost(a.length, b.length)$), iterating over columns first, then rows. To compute $cost(i, j)$, the current minimum cost is computed as $minCost = cost(i - 1, j - 1) + dist(i, j)$. This is the value assigned to $cost(i, j)$. If $cost(i - 1, j) + dist(i, j) < minCost$ or $cost(i, j - 1) + dist(i, j) < minCost$, an additional offset penalty of 0.5 is added to $cost(i, j)$.
+
+After the whole $cost$ matrix has been filled in, the entry $cost(a.length - 1, b.length - 1)$ (the bottom right corner), is the minimum distance between the two Gestures $a$ and $b$. The stored Gesture with the smallest distance from the performed Gesture is the one that is selected to be sent to the Roomba. The last step is to check what that distance was, and if it was below a certain threshold then the command would be sent, otherwise no command is sent. This is to ensure that all commands sent were close matches, since every gesture must return a match with a stored gesture. If the closest match has a high distance, it is not close enough to be executed as a command.
+
+This code was integrated into Cellbots as another control view, to ensure that the same speeds/timing would be used for each control scheme on the phone.
+\todo{screenshot}
+
+The gestures defined were ``forward", ``backward", ``left", and ``right". 
+\todo{pictures of gestures}
+All the gestures are performed with the phone's screen facing the user. The ``stop" command was left as an on-screen button, rather than a gesture, to make it easier for the subject to maintain control (and for the sake of the hardware and testing environment).
 
 \chapter{Human Factors Experiment Design}
 General description and justification for choices in the experiment.
