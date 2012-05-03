@@ -3,24 +3,53 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-\usepackage[final]{pdfpages}
+\usepackage{subfig}
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{colortbl}
 \usepackage{longtable}
+\usepackage[final]{pdfpages}
+\usepackage{float}
 \author{Lauren Frazier}
 \title{Evaluation of Gesture-Based Controls for Robotic Systems}
 \begin{document}
-\maketitle
-%%%%%%%%%%%%%%%%%%%%%%% TODO LIST %%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\todo}[1]{
-    \addcontentsline{tdo}{todo}{\protect{#1}}
-    \marginpar{#1}
-}
 
-\makeatletter \newcommand \listoftodos{\section*{Todo list} \@starttoc{tdo}}
-  \newcommand\l@todo[2]
-    {\par\noindent \textit{#2}, \parbox{10cm}{#1}\par} \makeatother
+\begin{titlepage}
+\begin{center}
+{ \Large EVALUATION OF GESTURE-BASED CONTROLS FOR ROBOTIC SYSTEMS } \\[1cm]
+
+{\Large Lauren E. Frazier} \\[1cm]
+
+{A THESIS} \\[1cm]
+
+in \\[1cm]
+
+{\Large Computer and Information Science}\\[1.5cm]
+
+Presented to the Faculties of the University of Pennsylvania in Partial Fulfillment of the Requirements for the Degree of Master of Science in Engineering\\[1cm]
+
+2012 \\[2.5cm]
+
+\rule{0.6\linewidth}{0.1mm} \\
+Norman I. Badler\\
+Supervisor of Thesis \\[2.5cm]
+
+\rule{0.6\linewidth}{0.1mm} \\
+Jianbo Shi\\
+Graduate Group Chairperson
+\end{center}
+\end{titlepage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%% TODO LIST %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\todo}[1]{
+%    \addcontentsline{tdo}{todo}{\protect{#1}}
+%    \marginpar{#1}
+%}
+%
+%\makeatletter \newcommand \listoftodos{\section*{Todo list} \@starttoc{tdo}}
+%  \newcommand\l@todo[2]
+%    {\par\noindent \textit{#2}, \parbox{10cm}{#1}\par} \makeatother
     
     
 %\listoftodos
@@ -74,34 +103,74 @@ The work presented in \cite{Rogalla} integrates speech recognition into the syst
 The work in \cite{Guo} uses a Wiimote to control a Sony AIBO robotic dog. It describes a guide to designing effective human-robot interface \cite{GoodrichOlsen}. It also describes \cite{YancoDrury}, which classifies and details robotic control schemes and defines terminology related to HRI. The work in \cite{YancoDrury} defines the autonomy level of a robot as the percentage of the time that the robot carries out a task on its own (as opposed to intervention from the operator). Like \cite{Guo}, this paper deals with a robot with a low autonomy level.
 
 \section*{Comparison to Prior Work}
-While this paper has most of its origin in \cite{Varcholik_Barber_Nicholson_2008}, there are a few differences. The work in \cite{Varcholik_Barber_Nicholson_2008} uses a Nintendo Wiimote to control the actions of the robot, rather than a smartphone or XBOX controller. In the case of the smartphone, computation of gestures is performed on the phone, rather than on an intermediate computer. Like the work presented in \cite{Varcholik_Barber_Nicholson_2008}, this system uses the movement of the controller, rather than a computer vision system to observe the user. This gives the added benefit that the user can move while controlling the robot without getting out of range.
+While this paper has most of its origin in \cite{Varcholik_Barber_Nicholson_2008}, there are a few differences. The work in \cite{Varcholik_Barber_Nicholson_2008} uses a Nintendo Wiimote to control the actions of the robot, rather than a smartphone or XBOX controller. In the case of the smartphone, computation of gestures is performed on the phone, rather than on an intermediate computer. Like the work presented in \cite{Varcholik_Barber_Nicholson_2008}, this system uses the movement of the controller, rather than a computer vision system to observe the user. This gives the added benefit that the user can move while controlling the robot without getting out of range of a camera. The work in \cite{Varcholik_Barber_Nicholson_2008} uses an algorithm based on the 2D gesture recognition presented in \cite{Rubine}, while my gesture recognition system is based on \cite{TaKG} and uses Dynamic Time Warping to classify gestures. 
 
 \chapter{Implementation of Control Systems}
 In this chapter I will describe the implementation of the four control systems used in the experiment. First, I describe the ``standard" XBOX 360 controller setup, then the application used for the D-Pad and tilt controllers, and finally the gesture-based control application.
 
 The robot in question is an iRobot Roomba 560 vacuum  cleaner. None of the four control schemes require making modifications to the Roomba, and the vacuum/brushes are turned off during the experiment. It is controlled from a standard wireless Microsoft XBOX 360 controller and a Samsung Galaxy S II Android phone.
-\todo{photo of roomba and phone}
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[A Roomba 560]{\includegraphics[width=0.3\textwidth]{images/roomba}}
+	~
+	\subfloat[A Samsung Galaxy S II]{\includegraphics[width=0.3\textwidth]{images/Samsung}}
+	~
+	\subfloat[An XBOX 360 controller]{\includegraphics[width=0.3\textwidth]{images/xbox-360}}
+	\caption{The hardware used in the study, a Roomba vacuum cleaner, a Samsung Galaxy S II, and an XBOX 360 controller.}
+	\label{hardware}
+\end{figure}
+
 \section{XBOX 360 Controller}
 The XBOX 360 controls for the Roomba are written in Python (see Appendix). The program uses a library called RoombaSCI to communicate with the Roomba via Bluetooth. RoombaSCI is a Python wrapper for iRobot's Serial Command Interface Specification, which allows commands to be sent to the Roomba through its serial port. RoombaSCI abstracts tasks like setting up the connection and sending bytes to specific motors into commands like \texttt{FORWARD}, \texttt{STOP}, and \texttt{SPIN LEFT} \cite{RoombaSCI}. It also allows the programmer to set the speed of the Roomba within the range allowed by the hardware (-500 - 500 mm/s). \cite{iRobot}
 
 A RooTooth bluetooth-serial adapter was used to communicate with the computer wirelessly. The Pygame library is also used to properly capture the input from the controller. 
 
-The end result is a controller that can be used to move forward/backward and rotate to the left or right in place. The right trigger sends the \texttt{FORWARD} command, the left trigger sends \texttt{BACKWARD}, and the left analog stick pressed to the left or right sends a \texttt{LEFT} or \texttt{RIGHT} command. The robot continues moving forward/backward/left/right as long as the trigger or analog stick is held, and will stop when it is released, or another button is pressed. When using the XBOX 360 controller, the robot can only move at the maximum speed, and it can only perform one of forward/backward or rotation at any given time (forward motion must stop in order to turn). The left and right controls are not gradual, meaning that leaning the analog stick partially to the side does nothing. In order to turn left/right, the analog stick must be pushed completely to one side or the other.
-\todo{xbox diagram}
+The end result is a controller that can be used to move forward/backward and rotate to the left or right in place. The right trigger sends the \texttt{FORWARD} command, the left trigger sends \texttt{BACKWARD}, and the left analog stick pressed to the left or right sends a \texttt{LEFT} or \texttt{RIGHT} command (see Figure~\ref{xbox_diagram}). The robot continues moving forward/backward/left/right as long as the trigger or analog stick is held, and will stop when it is released, or another button is pressed. When using the XBOX 360 controller, the robot can only move at the maximum speed, and it can only perform one of forward/backward or rotation at any given time (forward motion must stop in order to turn). The left and right controls are not gradual, meaning that leaning the analog stick partially to the side does nothing. In order to turn left/right, the analog stick must be pushed completely to one side or the other.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.4]{images/xbox_diagram}
+	\caption{The XBOX 360 control scheme. The left analog stick controls left and right turns, while the triggers control forward and backward movement.}
+	\label{xbox_diagram}
+\end{figure}
 
 \section{Cellbots Application}
-The D-Pad and the tilt controls were downloaded to the phone as part of a single app called Cellbots. Cellbots is an open source Android application, available for free online or in the Android Market. The app comes with four control schemes, including the D-Pad controls and the tilt controls. It also included voice controls and an on-screen Atari-style joystick which were not used in the experiments but could be utilized in future research.
-\todo{screenshots of cellbots}
+The D-Pad and the tilt controls were downloaded to the phone as part of a single app called Cellbots. Cellbots is an open source Android application, available for free online or in the Android Market. The app comes with four control schemes, including the D-Pad controls and the tilt controls (Figure~\ref{cellbots}). It also included voice controls and an on-screen Atari-style joystick which were not used in the experiments but could be utilized in future research.
+
+\begin{figure}
+	\centering
+	\subfloat[The D-Pad controls. Each of the four directional buttons cause the robot to move.]{\includegraphics[scale=0.3]{images/dpad}}
+	~
+	\subfloat[The tilt controls. Holding the center button and tilting the phone causes the robot to move.]{\includegraphics[scale=0.3]{images/tilt}}
+	\caption{Two of the screens from Cellbots, D-Pad and tilt.}
+	\label{cellbots}
+\end{figure}
 
 The D-Pad controls require the user to press one of four on-screen buttons, arranged in a cross. Like the XBOX 360 controller, the robot moves forward/backward and rotates in place when the appropriate button is held down, stopping when the button is released. Also like the XBOX 360 controller, the D-Pad only allows one speed and one type of movement at a time.
 
-The tilt controls use the phone's accelerometers to control the robot. The user holds the phone horizontally (screen facing up) and holds down an on-screen button. While the button is held down, tilting the phone forward (rotation around its x-axis) causes the robot to begin to drive forward. The phone can be rolled right or left (rotating around its y-axis) to steer. 
-\todo{phone axis diagram}
+The tilt controls use the phone's accelerometers to control the robot. The user holds the phone horizontally (screen facing up) and holds down an on-screen button. While the button is held down, tilting the phone forward (rotation around its x-axis) causes the robot to begin to drive forward. The phone can be rolled right or left (rotating around its y-axis) to steer. Figure~\ref{acceleration_axes} shows the phone's axes.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/acceleration_axes}
+	\caption{The smartphone's x, y, and z axes.}
+	\label{acceleration_axes} 
+\end{figure}
+
 The tilt controls differ from the other controls in two ways: first, the speed can vary. The more the phone is tilted forward, the faster the robot moves, up to the maximum speed of 500 mm/s.  The second difference is that the tilt controls allow forward/backward motion and turning at the same time. For example, if the phone is tilted forward and rolled left, the robot will perform a left turn, rather than rotating in place.
 
 \section{Gesture-Based Control Application}
-The gesture-based controls are implemented on top of the existing Cellbots application. Cellbots is an open source application, so the gesture controls were added as a fifth control type. \todo{screenshot of gesturetrainer}
+The gesture-based controls are implemented on top of the existing Cellbots application. Cellbots is an open source application, so the gesture controls were added as a fifth control type. 
+
 To recognize the gestures using accelerometers only, I turned to another open source Android application called GestureTrainer. GestureTrainer is an implementation of the concepts outlined in \cite{TaKG} for gesture recognition using accelerometer data.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{images/gesture_framework}
+	\caption{The GestureTrainer architecture. The Cellbots app was modified to include Gesture Recognition Service, Gesture Recorder, and Gesture Classifier, making it a Gesture Controlled Android Application}
+	\label{gesture_framework}
+\end{figure}
 
 Users can record and name their own gestures on the phone, and from then on when the gesture is performed and recognized, the name is sent to the Roomba. The phone recognizes gestures continuously, without the need to specify when the user is about to perform a gesture.
 
@@ -115,11 +184,38 @@ The $cost$ matrix is filled in dynamically from the top left ($cost(0, 0)$) to t
 
 After the whole $cost$ matrix has been filled in, the entry $cost(a.length - 1, b.length - 1)$ (the bottom right corner), is the minimum distance between the two Gestures $a$ and $b$. The stored Gesture with the smallest distance from the performed Gesture is the one that is selected to be sent to the Roomba. The last step is to check that distance against a threshold. If the distance is less than the threshold, then the command would be sent, otherwise no command is sent. This is to ensure that all commands sent were close matches, since every gesture will return a match with some stored gesture, even if there are no similar gestures. If the closest match has a high distance, it is not close enough to be executed as a command so it is ignored.
 
-This code was integrated into Cellbots as another control view, to ensure that the same speeds/timing would be used for each control scheme on the phone.
-\todo{screenshot}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{images/gesture}
+	\caption{The gesture-based controller screen added to Cellbots. It uses the code and algorithms from GestureTrainer to perform gesture recognition, and also has a \texttt{STOP} button.}
+	\label{gesture_cellbots}
+\end{figure}
 
-The gestures defined were \texttt{FORWARD}, \texttt{BACKWARD}, \texttt{LEFT}, and \texttt{RIGHT}. 
-\todo{photos of gestures}
+
+One of the major benefits of using this algorithm is that the gesture recognition is performed with only one sample. Other gesture recognition systems, like the one outlined in \cite{Rubine} require multiple samples to perform recognition reliably.
+
+This code was integrated into Cellbots as another control view, to ensure that the same speeds/timing would be used for each control scheme on the phone  (Figure~\ref{gesture_cellbots}).
+
+The gestures defined were \texttt{FORWARD}, \texttt{BACKWARD}, \texttt{LEFT}, and \texttt{RIGHT} (see Figure~\ref{gesture_photos} for demonstrations of each gesture). 
+
+\begin{figure}[h!]
+	\centering
+	\subfloat[\texttt{FORWARD} gesture (high to low).]{\reflectbox{%
+	\includegraphics[width=0.5\textwidth]{images/forward}}}
+	~
+	\subfloat[\texttt{BACKWARD} gesture (two counterclockwise circles).]{\reflectbox{%
+	\includegraphics[width=0.5\textwidth]{images/backward}}}
+	
+	\subfloat[\texttt{LEFT} gesture (right to left).]{\reflectbox{%
+	\includegraphics[width=0.5\textwidth]{images/left}}}
+	~
+	\subfloat[\texttt{RIGHT} gesture (left to right).]{\reflectbox{%
+	\includegraphics[width=0.5\textwidth]{images/right}}}
+	
+	\caption{The four gestures defined in the gesture-based application.}
+	\label{gesture_photos}
+\end{figure}
+
 All the gestures are performed with the phone's screen facing the user. The \texttt{STOP} command was left as an on-screen button, rather than a gesture, to make it easier for the subject to maintain control (and for the sake of the hardware and testing environment).
 
 \chapter{Human Factors Experiment Design}
@@ -129,8 +225,18 @@ The Roomba was chosen because it is a commercial, off the shelf robot that is re
 
 The Samsung Galaxy S II was chosen primarily for its gyroscopes. All Android phones come with accelerometers, but only some with gyroscopes, which help the phone to give more precise measurements. The Microsoft XBOX 360 controller was chosen because until recent games like ``Mario Kart Wii", most driving/navigating games are were made for the XBOX 360, making its controller a good ``standard" controller.
 \section{Track Design}
-The track used in the experiments is based on a beginner's time trial circuit from Nintendo's ``Mario Kart Wii" called Mario Circuit (sometimes Mario Raceway). \todo{pictures}
-The course used in the study is a scaled down version of Mario Circuit, which is a slight variation on a traditional figure-eight course. The course was chosen primarily because it involves two U-turns (one left, and one right), a left turn, a right turn, and two straightaways, allowing all the commands to be tested every lap. In the game, players race around the track for 3 laps, and the 3 lap requirement was kept for the experiment. Subjects completed 3 laps, then crossed the finish line a few yards away. A ``Mario Kart Wii" course was also chosen because ``Mario Kart Wii" is the  best-selling racing game of all time, and Mario Circuit is an updated version of one of the classic courses, originally created by the game designers as the premier time trial course \cite{MarioCircuit}. 
+The track used in the experiments is based on a beginner's time trial circuit from Nintendo's ``Mario Kart Wii" called Mario Circuit (sometimes Mario Raceway). 
+
+\begin{figure}
+	\centering
+	\subfloat[Mario Circuit, as seen in the video game ``Mario Kart Wii".]{\includegraphics[width=0.5\textwidth]{images/mario_circuit_screenshot}}
+	~
+	\subfloat[The original floor plan for the course used in the study. It was later scaled to be appropriate for the size of the Roomba and the lab space in which the experiment took place.]{\includegraphics[width=0.5\textwidth]{images/MarioCircuitLayout}}
+	\caption{Comparison of the original Mario Circuit track with the course used in the experiments.}
+	\label{mario_circuit}
+\end{figure}
+
+The course used in the study is a scaled down version of Mario Circuit, which is a slight variation on a traditional figure-eight course (see Figure~\ref{mario_circuit}). The course was chosen primarily because it involves two U-turns (one left, and one right), a left turn, a right turn, and two straightaways, allowing all the commands to be tested every lap. In the game, players race around the track for 3 laps, and the 3 lap requirement was kept for the experiment. Subjects completed 3 laps, then crossed the finish line a few yards away. A ``Mario Kart Wii" course was also chosen because ``Mario Kart Wii" is the  best-selling racing game of all time, and Mario Circuit is an updated version of one of the classic courses, originally created by the game designers as the premier time trial course \cite{MarioCircuit}. 
 
 \section{Questionnaire Design}
 The questionnaire opens with basic demographic questions (age, gender, field of study/profession, etc.), then   asks about subjects' video game habits and computer experience. The questionnaire then asks the following specific questions about each of the four controllers (on a five-level Likert scale unless otherwise specified):
@@ -195,8 +301,8 @@ The XBOX 360 controller got slightly better ratings than the gesture-based contr
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=5in]{images/sm_50.png}
-	\caption{Numbers indicate rank given to the controller for using it to accomplish a critical task. The XBOX 360 controller was the most popular for accomplishing a critical task; the gesture-based controls were the least popular.}
+	\includegraphics[width=4.5in]{images/sm_50.png}
+	\caption{The numbers 1-4 indicate rank given to the controller for using it to accomplish a critical task. The XBOX 360 controller was the most popular for accomplishing a critical task; the gesture-based controls were the least popular.}
 	\label{sm_50}
 \end{figure}
 
@@ -206,8 +312,8 @@ Similarly, 71\% of subjects would use the XBOX 360 controller for two hours cont
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=5in]{images/sm_51.png}
-	\caption{Numbers indicate rank given to the controller for using it for two hours continuously. The XBOX 360 controller was the most popular for using continuously for two hours; the gesture-based controls were the least popular.}
+	\includegraphics[width=4.5in]{images/sm_51.png}
+	\caption{The numbers 1-4 indicate rank given to the controller for using it for two hours continuously. The XBOX 360 controller was the most popular for using continuously for two hours; the gesture-based controls were the least popular.}
 	\label{sm_51}
 \end{figure}
 
@@ -215,7 +321,7 @@ The tilt controller was ranked the most intuitive (40\%), followed by the D-Pad,
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=5in]{images/sm_52.png}
+	\includegraphics[width=4.5in]{images/sm_52.png}
 	\caption{The tilt controller was ranked the most intuitive, while the gesture-based controller was ranked the least intuitive.}
 	\label{sm_52}
 \end{figure}
@@ -224,16 +330,32 @@ The tilt controller was also ranked the most fun to use, followed by the XBOX 36
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=5in]{images/sm_53.png}
+	\includegraphics[width=4.5in]{images/sm_53.png}
 	\caption{The tilt controller was ranked the most fun to use, while the D-Pad and gesture-based controls tied for 3rd place.}
 	\label{sm_53}
 \end{figure}
 
 \section{Analysis and Hypotheses}
-Empirical data shows that the XBOX 360 controller was the fastest, and the second most ``error free", meaning a low number of line faults and mistake acknowledgement. The gesture-based controls performed poorly, with an average time, average number of faults, and average mistake acknowledgement more than twice all the others'.
+Empirical data shows that the XBOX 360 controller was the fastest, and the second most ``error free", meaning a low number of line faults and mistake acknowledgement. The gesture-based controls performed poorly, with an average time, average number of faults, and average mistake acknowledgement more than twice that of all the others controllers. The qualitative data also showed that the gesture-based controls were not well suited to the task. 
+
+Based on these two sets of data, I believe that the gesture-based controller is not a good system for direct control of a vehicle.
+
+One major problem with the gesture-based controls is the timing. In order to recognize a gesture, the gesture must be fully completed. This means that when a subject wants to issue a command, he/she must complete the entire movement before the phone can classify the gesture and send it to the robot. Compare this to pressing a button, which is almost instant. There is no recognition process with a button press, so as soon as the button is fully pressed, the command can be sent to the robot. Many subjects felt frustrated waiting for the entire gesture to finish and be classified before the command was sent. Often, subjects tried to make up for the lost time by gesturing faster/more firmly, but this would often cause unwanted accelerometer data which led to incorrect classifications.
+
+This could be remedied in part by using a system more like the one usually used with the Microsoft Kinect. Rather than gestures, most of the commands are given through positioning of the hands/body. Using the position of the hand, a system could be constructed that allows for faster recognition, along with gradual turning and speed changes, rather than sending a string of commands.
+
+The other major problem with the gesture-based controls was accuracy. Gestures can be recognized incorrectly, whereas buttons cannot provide incorrect information (a user could accidentally press the wrong button, but a properly working set of buttons will always send the right information). The fact that gestures do not have 100\% accuracy adds a layer of computer error on top of the possible human error, which can be very dangerous.
+
+The emotions of the user also come into play with gesture-based controls in a way that they do not with buttons or tilt based controls. A calm user will gesture a certain way, while an agitated user will usually gesture more wildly. A wild gesture's accelerometer data is much more likely to appear different from the original gesture's data, making it more likely to be classified incorrectly. This is amplified into a negative feedback cycle when a user makes a mistake, because often the user will gesture more vehemently to correct the mistake, leading to more mistakes. Buttons and tilt-based controllers are not affected by how frantic or agitated the user is. 
+
+This is not to say that gesture-based controls have no place in robotics, but that they would most likely be better suited for a higher-level set of commands. Gesture-based controls were originally explored because gestures are a natural human form of communication, but when humans gesture, it is very rarely to communicate low level directions like ``go forward", ``stop, and ``rotate left". More often the commands assume a certain level of autonomy on the part of the receiver. For example, telling another person ``join me" through a hand gesture assumes that the person will figure out how to navigate the room on his own. Many subjects said that they felt that the gesture-based controls were ``unintuitive" (no subject ranked it as the most intuitive) ``frustrating", and ``tiring". I believe it is because the commands being sent were too low-level for the gesture-based controls used in the study to be effective. 
+
+Gestures used between humans also rely on the fact that the receiver can see/calculate where the other person is indicating. Many human gestures for navigation correspond to phrases with an explicit point of reference (ex. ``follow me", ``go over there"). The Army Field Manual details many such gestures \cite{VisualSignals}. Using gestures to control the robot's direct movement was therefore somewhat unintuitive to subjects who were not used to applying a high-level form of communication to a low-level command. 53.3\% of the subjects improved over the three laps, which indicates that the gesture-based controls used in the study may require more training time, not less as was originally thought.
 
 \chapter{Conclusion}
-This is a conclusion.
+In this thesis, I presented a suite of robotic control systems: an XBOX 360 controller, a touchscreen D-Pad, a tilt controller, and a hand gesture controller. All systems were composed of commercial, off the shelf hardware. A study with empirical and qualitative data was conducted to determine the most effective of the controllers. The empirical data showed the XBOX 360 controller to be the most effective (fastest), and the D-Pad to be the least error prone. By contrast, the gesture-based controls were shown to be both the slowest and the most error prone. The qualitative data showed that the gesture controls were thought to be the least intuitive and one of the least enjoyable controllers to use, while the tilt controller was ranked the most intuitive and the most enjoyable. 
+
+Based on the data and analysis, gesture-based controls should continue to be explored, but the focus should shift to the context of more autonomous robots who can safely navigate their own environment. It appears that most of the problems that subjects had with the gesture-based controls could be alleviated by implementing a different set/style of commands. Results for gesture-based controllers could perhaps be improved by allowing the subject to define his/her own gestures, or implementing more tilt style controls using accelerometer data combined with computer vision data.
 
 \bibliographystyle{plain}
 \bibliography{rough}
@@ -242,12 +364,12 @@ This is a conclusion.
 \pagestyle{plain}
 \chapter*{Appendix}
 \section*{Gesture Recognition Code}
-This is the portion of the code that calculates the distance between two Gestures, $a$ and $b$.
+This is the portion of the GestureTrainer/Cellbots code that calculates the distance between two Gestures, $a$ and $b$. The Gesture class is essentially an object wrapper for \texttt{String label},which represents the Gesture's name, and \texttt{List<float[]> values}, which represents the stream of $(x, y, z)$ values recorded.
 \lstset{language=Java, breaklines=true, tabsize=2}
 \lstinputlisting{DTWAlgorithm.java}
 
 \section*{Time Trials Raw Data}
 
 \section*{Questionnaire Data}
-\includepdf{Questionnaire.pdf}
+%\includepdf{Questionnaire.pdf}
 \end{document}

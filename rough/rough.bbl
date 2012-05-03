@@ -50,10 +50,19 @@ Robert Nesselrath.
 \newblock Takg - ein toolkit zur automatischen klassifikation von gesten.
 \newblock Master's thesis, University of Saarland, 2008.
 
+\bibitem{VisualSignals}
+Department of~the Army.
+\newblock Visual signals (fm 21-60), 1987.
+
 \bibitem{Rogalla}
 Rogalla, Ehrenmann, Zollner, Becher, and Dillman.
 \newblock Using gesture and speech control for commanding a robot assistant.
 \newblock 2002.
+
+\bibitem{Rubine}
+Dean Rubine.
+\newblock Specifying gestures by example.
+\newblock {\em SIGGRAPH Comput. Graph.}, 25(4):329--337, July 1991.
 
 \bibitem{Varcholik_Barber_Nicholson_2008}
 Paul Varcholik, Daniel Barber, and Denise Nicholson.

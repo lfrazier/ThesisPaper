@@ -12,45 +12,45 @@ Warning--entry type for "MarioCircuit" isn't style-file defined
 Warning--empty journal in Rogalla
 Warning--can't use both volume and number fields in Varcholik_Barber_Nicholson_2008
 Warning--empty year in Varcholik_Barber_Nicholson_2008
-You've used 13 entries,
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            584 strings with 6221 characters,
-and the built_in function-call counts, 4901 in all, are:
-= -- 486
-> -- 195
+            597 strings with 6389 characters,
+and the built_in function-call counts, 5397 in all, are:
+= -- 535
+> -- 209
 < -- 9
-+ -- 78
-- -- 64
-* -- 301
-:= -- 747
-add.period$ -- 40
-call.type$ -- 13
-change.case$ -- 69
++ -- 84
+- -- 68
+* -- 331
+:= -- 828
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 77
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 205
-empty$ -- 407
-format.name$ -- 64
-if$ -- 1091
+cite$ -- 18
+duplicate$ -- 223
+empty$ -- 456
+format.name$ -- 68
+if$ -- 1195
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 11
-newline$ -- 66
-num.names$ -- 26
-pop$ -- 100
+int.to.str$ -- 15
+missing$ -- 12
+newline$ -- 75
+num.names$ -- 30
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 64
 quote$ -- 0
-skip$ -- 179
+skip$ -- 194
 stack$ -- 0
-substring$ -- 324
-swap$ -- 79
+substring$ -- 359
+swap$ -- 81
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 56
 warning$ -- 3
-while$ -- 42
-width$ -- 15
-write$ -- 142
+while$ -- 48
+width$ -- 17
+write$ -- 161
 (There were 6 warnings)
