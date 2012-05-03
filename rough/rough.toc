@@ -5,7 +5,7 @@
 \contentsline {chapter}{\numberline {3}Implementation of Control Systems}{5}
 \contentsline {section}{\numberline {3.1}XBOX 360 Controller}{5}
 \contentsline {section}{\numberline {3.2}Cellbots Application}{6}
-\contentsline {section}{\numberline {3.3}Gesture-Based Control Application}{6}
+\contentsline {section}{\numberline {3.3}Gesture-Based Control Application}{7}
 \contentsline {chapter}{\numberline {4}Human Factors Experiment Design}{9}
 \contentsline {section}{\numberline {4.1}Platform and Hardware}{9}
 \contentsline {section}{\numberline {4.2}Track Design}{10}
@@ -13,6 +13,6 @@
 \contentsline {section}{\numberline {4.4}Experiment Procedure}{11}
 \contentsline {chapter}{\numberline {5}Results}{12}
 \contentsline {section}{\numberline {5.1}Time Trials}{12}
-\contentsline {section}{\numberline {5.2}Questionnaire}{12}
-\contentsline {section}{\numberline {5.3}Analysis and Hypothesis}{12}
-\contentsline {chapter}{\numberline {6}Conclusion}{13}
+\contentsline {section}{\numberline {5.2}Questionnaire}{13}
+\contentsline {section}{\numberline {5.3}Analysis and Hypotheses}{14}
+\contentsline {chapter}{\numberline {6}Conclusion}{19}

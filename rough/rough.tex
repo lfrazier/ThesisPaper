@@ -3,6 +3,11 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage[final]{pdfpages}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{colortbl}
+\usepackage{longtable}
 \author{Lauren Frazier}
 \title{Evaluation of Gesture-Based Controls for Robotic Systems}
 \begin{document}
@@ -72,7 +77,7 @@ The work in \cite{Guo} uses a Wiimote to control a Sony AIBO robotic dog. It des
 While this paper has most of its origin in \cite{Varcholik_Barber_Nicholson_2008}, there are a few differences. The work in \cite{Varcholik_Barber_Nicholson_2008} uses a Nintendo Wiimote to control the actions of the robot, rather than a smartphone or XBOX controller. In the case of the smartphone, computation of gestures is performed on the phone, rather than on an intermediate computer. Like the work presented in \cite{Varcholik_Barber_Nicholson_2008}, this system uses the movement of the controller, rather than a computer vision system to observe the user. This gives the added benefit that the user can move while controlling the robot without getting out of range.
 
 \chapter{Implementation of Control Systems}
-In this chapter, I will describe the implementation of the four control systems used in the experiment. First, I describe the ``standard" XBOX 360 controller setup, then the application used for the D-Pad and tilt controllers, and finally the gesture-based control application.
+In this chapter I will describe the implementation of the four control systems used in the experiment. First, I describe the ``standard" XBOX 360 controller setup, then the application used for the D-Pad and tilt controllers, and finally the gesture-based control application.
 
 The robot in question is an iRobot Roomba 560 vacuum  cleaner. None of the four control schemes require making modifications to the Roomba, and the vacuum/brushes are turned off during the experiment. It is controlled from a standard wireless Microsoft XBOX 360 controller and a Samsung Galaxy S II Android phone.
 \todo{photo of roomba and phone}
@@ -81,7 +86,7 @@ The XBOX 360 controls for the Roomba are written in Python (see Appendix). The p
 
 A RooTooth bluetooth-serial adapter was used to communicate with the computer wirelessly. The Pygame library is also used to properly capture the input from the controller. 
 
-The end result is a controller that can be used to move forward/backward and rotate to the left or right in place. The right trigger sends the \texttt{FORWARD} command, the left trigger sends \texttt{BACKWARD}, and the left analog stick pressed to the left or right sends a \texttt{LEFT} or \texttt{RIGHT} command. The robot continues moving forward/backward/left/right as long as the trigger or analog stick is held, and will stop when it is released, or another button is pressed. When using the XBOX 360 controller, the robot can only move at the maximum speed, and it can only perform one of forward/backward or rotation at any given time (forward motion must stop in order to turn).
+The end result is a controller that can be used to move forward/backward and rotate to the left or right in place. The right trigger sends the \texttt{FORWARD} command, the left trigger sends \texttt{BACKWARD}, and the left analog stick pressed to the left or right sends a \texttt{LEFT} or \texttt{RIGHT} command. The robot continues moving forward/backward/left/right as long as the trigger or analog stick is held, and will stop when it is released, or another button is pressed. When using the XBOX 360 controller, the robot can only move at the maximum speed, and it can only perform one of forward/backward or rotation at any given time (forward motion must stop in order to turn). The left and right controls are not gradual, meaning that leaning the analog stick partially to the side does nothing. In order to turn left/right, the analog stick must be pushed completely to one side or the other.
 \todo{xbox diagram}
 
 \section{Cellbots Application}
@@ -118,7 +123,7 @@ The gestures defined were \texttt{FORWARD}, \texttt{BACKWARD}, \texttt{LEFT}, an
 All the gestures are performed with the phone's screen facing the user. The \texttt{STOP} command was left as an on-screen button, rather than a gesture, to make it easier for the subject to maintain control (and for the sake of the hardware and testing environment).
 
 \chapter{Human Factors Experiment Design}
-In this chapter, I will describe the setup of the human factors experiment, as well as the design choices. The human factors experiment was conducted with 15 subjects to gauge the effectiveness of each controller. The experiment involved empirical metrics (such as time taken to complete course and number of times the robot crossed the boundaries), as well as qualitative data obtained through a questionnaire.
+In this chapter I will describe the setup of the human factors experiment, as well as the design choices. The human factors experiment was conducted with 15 subjects to gauge the effectiveness of each controller. The experiment involved empirical metrics (such as time taken to complete course and number of times the robot crossed the boundaries), as well as qualitative data obtained through a questionnaire.
 \section{Platform and Hardware}
 The Roomba was chosen because it is a commercial, off the shelf robot that is relatively easy to control via a store bought Bluetooth adapter. It has two motorized wheels in the center and a single caster in the front for smooth forward steering. The lack of a back caster meant that the Roomba's backwards movement could sometimes become slightly erratic at maximum speed, but for the most part, the movement was unaffected.
 
@@ -128,7 +133,7 @@ The track used in the experiments is based on a beginner's time trial circuit fr
 The course used in the study is a scaled down version of Mario Circuit, which is a slight variation on a traditional figure-eight course. The course was chosen primarily because it involves two U-turns (one left, and one right), a left turn, a right turn, and two straightaways, allowing all the commands to be tested every lap. In the game, players race around the track for 3 laps, and the 3 lap requirement was kept for the experiment. Subjects completed 3 laps, then crossed the finish line a few yards away. A ``Mario Kart Wii" course was also chosen because ``Mario Kart Wii" is the  best-selling racing game of all time, and Mario Circuit is an updated version of one of the classic courses, originally created by the game designers as the premier time trial course \cite{MarioCircuit}. 
 
 \section{Questionnaire Design}
-The questionnaire opens with demographic questions (age, gender, field of study/profession, etc.), then   asks about subjects' video game habits and computer experience. The questionnaire then asks the following specific questions about each of the four controllers (on a five-level Likert scale unless otherwise specified):
+The questionnaire opens with basic demographic questions (age, gender, field of study/profession, etc.), then   asks about subjects' video game habits and computer experience. The questionnaire then asks the following specific questions about each of the four controllers (on a five-level Likert scale unless otherwise specified):
 \begin{itemize}
 \item How aware were you of the controls while you were using them?
 \item How awkward was holding the controller in your hand?
@@ -146,10 +151,86 @@ Finally, the questionnaire asks participants to rank controllers according to wh
 When subjects arrived, they were first briefed on the purpose of the experiments. Every subject tried the controllers in a randomized order. A short period was allowed for the subject to get used to the controller before beginning the time trial course. The subject completed three timed laps around the course. Subjects were allowed to move between several locations outside the track during a run of the course, but were not allowed to touch the robot or follow it closely. The number of times the robot went outside the boundaries was recorded, along with the number of ``mistake acknowledgements". I defined ``mistake acknowledgements" as a physical or verbal cue that the subject performed a command they did not intend. Examples of mistake acknowledgements include stamping one's foot, shaking one's head, statements like ``No" and ``Oops", and swearing. After every run, the subject was informed of his/her time with that controller. Immediately after all four of the time trials were finished, the subject filled out the questionnaire. 
 
 \chapter{Results}
-In this chapter, I will discuss the results of the experiments. 
+In this chapter I will present the results of the experiments and questionnaire. First, a breakdown of the empirical data from the time trials is given, followed by the data from the questionnaire. Finally, I provide my analysis of both sets of data and present some hypotheses based on the combined data.
+
 \section{Time Trials}
+For the time trials, I recorded the time of each lap, the total time taken to complete the course, the number of ``line faults" (robot crossing out of the boundaries), and ``mistake acknowledgements" (defined in Section 4.4). The averages for each of these values are presented in Table~\ref{averages}. It should be noted that there were several subjects with times more than 2 standard deviations from the mean (3 in some cases). Because of the small sample size, their data was not excluded from the calculations. The full raw data can be found in the Appendix.
+
+\begin{table}[h]
+	\begin{tabular}{|c||l|l|l|}
+	\hline 
+	Controller & Avg. Time (sec) & Avg. Line Faults & Avg. Mistake Ack. \\ 
+	\hline 
+	D-Pad & 161.53 & 0.07 & 0.4 \\ 
+	\hline 
+	Tilt & 164.58 & 2.13 & 2.6 \\ 
+	\hline 
+	Gesture & 393.81 & 6.67 & 7.0 \\ 
+	\hline 
+	XBOX 360 & 124.74 & 0.93 & 0.5 \\ 
+	\hline 
+	\end{tabular} 
+	\caption{Average time taken to complete the course, average number of Line Faults, and average number of Mistake Acknowledgements for each of the four controller types.}
+	\label{averages}
+\end{table}
+
+The XBOX 360 controller had the fastest average time, with 124.74s, while the D-Pad and Tilt controllers were both approximately equal (161.53s and 164.58s, respectively). The gesture-based controls performed the slowest, with an average time of 393.81s.
+
+Though the XBOX 360 controller had the fastest average time, the fastest individual time belonged to the tilt controller: one subject completed the course in 83.3s, making the tilt controller the only controller with a total time under 100s.
+
+The D-Pad averaged the fewest line faults by far, with 0.07 (there was a total of 1 line fault across all subjects), while the gesture-based controls again came in last with an average of 6.67 faults.
+
+The D-Pad also averaged the fewest mistake acknowledgements, with 0.4 average mistake acknowledgements. The XBOX 360 controller was just behind the D-Pad with an average of 0.5 mistake acknowledgements. The gesture-based controls averaged 7.0 mistake acknowledgements, more than 17 times the average number of mistakes acknowledged with the D-Pad. The gesture-based system was also the only one where the minimum number of mistake acknowledgements was above 0; every single subject acknowledged at least one mistake.
+
 \section{Questionnaire}
-\section{Analysis and Hypothesis}
+Presented here are answers to several relevant questions. More data can be found in the Appendix.
+
+The D-Pad receieved mostly positive reviews, though 60\% of respondents said that they were aware of the controls while using them. 80\% said the controller was not awkward, and that they felt that they were fully in control of the robot at all times. 100\% of respondents rated the controls as easy to learn. 80\% said that they performed as well as they wanted to in the course. Many subjects enjoyed the ``simplicity" and ``familiarity" of the D-Pad, along with the fact that the directional arrows were visible. The most popular complaint about the D-Pad was that it could only handle one command at a time and could not turn and move simultaneously. It was also described as ``mundane" and ``less fun than [some other controls]".
+
+In a slight jump up from the D-Pad, 66\% of subjects said they were aware of the tilt controls while using them. 53\% rated the controls awkward, and only 60\% said they felt in control of the robot at all times. 40\% of respondents said they performed as well as they wanted to (a large deviation from the D-Pad). Subjects praised the tilt controls for being ``intuitive", ``smooth", and ``fun", while others criticized it for being ``hard to control".
+
+The gesture-based controls did not fare as well. 80\% of users said that they were aware of the controls while using them, and 66\% described them as awkward. 86.7\% of subjects said they did not feel in control of the robot at all times, and 86.6\% said it was difficult to maintain control while turning (46\% rated it hard to control while driving in a straight line). The majority of subjects rated the gestures somewhat easy to learn. Subjects enjoyed the ``novelty" of the gesture-based controls, but ultimately decided it was ``unresponsive", ``inaccurate", and ``frustrating" at times.
+
+The XBOX 360 controller got slightly better ratings than the gesture-based controls. Most respondents said that they were somewhat aware of the controls, while 86.6\% rated it not awkward. 86.7\% said they felt that they were fully in control of the robot at all times, which is the most of all the controllers. 100\% rated the XBOX 360 controller easy to learn. 86.7\% performed as well as that wanted to in the course. Subjects praised it for being ``familiar", ``easy to learn", and for having a physicality that allowed them to keep their eyes on the robot at all times. There were, however, many complaints about not being able to turn while moving forward, like the tilt controls, and having no way to gradually increase the amount the robot was turning. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5in]{images/sm_50.png}
+	\caption{Numbers indicate rank given to the controller for using it to accomplish a critical task. The XBOX 360 controller was the most popular for accomplishing a critical task; the gesture-based controls were the least popular.}
+	\label{sm_50}
+\end{figure}
+
+The majority of subjects, 53.3\% said that they would use the XBOX 360 controller as their first choice for accomplishing a critical task. 80\% of subjects ranked the gesture-based controls last for accomplishing a critical task, with no users ranking it as their first choice (see Figure~\ref{sm_50}).
+
+Similarly, 71\% of subjects would use the XBOX 360 controller for two hours continuously, while 80\% ranked the gesture-based controls in last place (see Figure~\ref{sm_51}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5in]{images/sm_51.png}
+	\caption{Numbers indicate rank given to the controller for using it for two hours continuously. The XBOX 360 controller was the most popular for using continuously for two hours; the gesture-based controls were the least popular.}
+	\label{sm_51}
+\end{figure}
+
+The tilt controller was ranked the most intuitive (40\%), followed by the D-Pad, then the XBOX 360 controller. No subjects rated the gesture-based controls the most intuitive (see Figure~\ref{sm_52}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5in]{images/sm_52.png}
+	\caption{The tilt controller was ranked the most intuitive, while the gesture-based controller was ranked the least intuitive.}
+	\label{sm_52}
+\end{figure}
+
+The tilt controller was also ranked the most fun to use, followed by the XBOX 360 controller, with D-Pad and gesture-based tying for third (see Figure~\ref{sm_53}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=5in]{images/sm_53.png}
+	\caption{The tilt controller was ranked the most fun to use, while the D-Pad and gesture-based controls tied for 3rd place.}
+	\label{sm_53}
+\end{figure}
+
+\section{Analysis and Hypotheses}
+Empirical data shows that the XBOX 360 controller was the fastest, and the second most ``error free", meaning a low number of line faults and mistake acknowledgement. The gesture-based controls performed poorly, with an average time, average number of faults, and average mistake acknowledgement more than twice all the others'.
 
 \chapter{Conclusion}
 This is a conclusion.
@@ -157,4 +238,16 @@ This is a conclusion.
 \bibliographystyle{plain}
 \bibliography{rough}
 
+\clearpage
+\pagestyle{plain}
+\chapter*{Appendix}
+\section*{Gesture Recognition Code}
+This is the portion of the code that calculates the distance between two Gestures, $a$ and $b$.
+\lstset{language=Java, breaklines=true, tabsize=2}
+\lstinputlisting{DTWAlgorithm.java}
+
+\section*{Time Trials Raw Data}
+
+\section*{Questionnaire Data}
+\includepdf{Questionnaire.pdf}
 \end{document}
