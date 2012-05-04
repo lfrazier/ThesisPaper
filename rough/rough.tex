@@ -98,7 +98,7 @@ The work presented in \cite{Rogalla} integrates speech recognition into the syst
 The work in \cite{Guo} uses a Wiimote to control a Sony AIBO robotic dog. It describes a guide to designing effective human-robot interface \cite{GoodrichOlsen}. It also describes \cite{YancoDrury}, which classifies and details robotic control schemes and defines terminology related to HRI. The work in \cite{YancoDrury} defines the autonomy level of a robot as the percentage of the time that the robot carries out a task on its own (as opposed to intervention from the operator). Like \cite{Guo}, this paper deals with a robot with a low autonomy level.
 
 \section*{Comparison to Prior Work}
-While this paper has most of its origin in \cite{Varcholik_Barber_Nicholson_2008}, there are a few differences. The work in \cite{Varcholik_Barber_Nicholson_2008} uses a Nintendo Wiimote to control the actions of the robot, rather than a smartphone or XBOX controller. In the case of the smartphone, computation of gestures is performed on the phone, rather than on an intermediate computer. Like the work presented in \cite{Varcholik_Barber_Nicholson_2008}, this system uses the movement of the controller, rather than a computer vision system to observe the user. This gives the added benefit that the user can move while controlling the robot without getting out of range of a camera. The work in \cite{Varcholik_Barber_Nicholson_2008} uses an algorithm based on the 2D gesture recognition presented in \cite{Rubine}, while my gesture recognition system is based on \cite{TaKG} and uses Dynamic Time Warping to classify gestures. 
+While this paper has most of its origin in \cite{Varcholik_Barber_Nicholson_2008}, there are a few differences. The work in \cite{Varcholik_Barber_Nicholson_2008} uses a Nintendo Wiimote to control the actions of the robot, rather than a smartphone or XBOX controller. In the case of the smartphone, computation of gestures is performed on the phone, rather than on an intermediate computer. Like the work presented in \cite{Varcholik_Barber_Nicholson_2008}, this system uses the movement of the controller, rather than a computer vision system to observe the user. This gives the added benefit that the user can move while controlling the robot without getting out of range of a camera. The work in \cite{Varcholik_Barber_Nicholson_2008} uses an algorithm based on the 2D gesture recognition presented in \cite{Rubine}, while the gesture recognition system presented in this thesis is based on \cite{TaKG} and uses Dynamic Time Warping to classify gestures. 
 
 \chapter{Implementation of Control Systems}
 In this chapter I will describe the implementation of the four control systems used in the experiment. First, I describe the ``standard" XBOX 360 controller setup, then the application used for the D-Pad and tilt controllers, and finally the gesture-based control application.
@@ -107,17 +107,17 @@ The robot in question is an iRobot Roomba 560 vacuum  cleaner. None of the four 
 
 \begin{figure}[h!]
 	\centering
-	\subfloat[A Roomba 560]{\includegraphics[width=0.3\textwidth]{images/roomba}}
+	\subfloat[A Roomba 560]{\includegraphics[width=0.3\textwidth, angle=270]{images/roomba_own}}
 	~
-	\subfloat[A Samsung Galaxy S II]{\includegraphics[width=0.3\textwidth]{images/Samsung}}
+	\subfloat[A Samsung Galaxy S II]{\includegraphics[width=0.3\textwidth, angle=270]{images/galaxy}}
 	~
-	\subfloat[An XBOX 360 controller]{\includegraphics[width=0.3\textwidth]{images/xbox-360}}
+	\subfloat[An XBOX 360 controller]{\includegraphics[width=0.3\textwidth, angle=180]{images/xbox_own}}
 	\caption{The hardware used in the study, a Roomba vacuum cleaner, a Samsung Galaxy S II, and an XBOX 360 controller.}
 	\label{hardware}
 \end{figure}
 
 \section{XBOX 360 Controller}
-The XBOX 360 controls for the Roomba are written in Python (see Appendix). The program uses a library called RoombaSCI to communicate with the Roomba via Bluetooth. RoombaSCI is a Python wrapper for iRobot's Serial Command Interface Specification, which allows commands to be sent to the Roomba through its serial port. RoombaSCI abstracts tasks like setting up the connection and sending bytes to specific motors into commands like \texttt{FORWARD}, \texttt{STOP}, and \texttt{SPIN LEFT} \cite{RoombaSCI}. It also allows the programmer to set the speed of the Roomba within the range allowed by the hardware (-500 - 500 mm/s)\cite{iRobot}.
+The XBOX 360 controls for the Roomba are written in Python. The program uses a library called RoombaSCI to communicate with the Roomba via Bluetooth. RoombaSCI is a Python wrapper for iRobot's Serial Command Interface Specification, which allows commands to be sent to the Roomba through its serial port. RoombaSCI abstracts tasks like setting up the connection and sending bytes to specific motors into commands like \texttt{FORWARD}, \texttt{STOP}, and \texttt{SPIN LEFT} \cite{RoombaSCI}. It also allows the programmer to set the speed of the Roomba within the range allowed by the hardware (-500 - 500 mm/s)\cite{iRobot}.
 
 A RooTooth bluetooth-serial adapter was used to communicate with the computer wirelessly. The Pygame library is also used to properly capture the input from the controller. 
 
@@ -126,12 +126,12 @@ The end result is a controller that can be used to move forward/backward and rot
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.4]{images/xbox_diagram}
-	\caption{The XBOX 360 control scheme. The left analog stick controls left and right turns, while the triggers control forward and backward movement.}
+	\caption{The XBOX 360 control scheme. The left analog stick controls left and right turns, while the triggers control forward and backward movement. Courtesy of http://game-machines.com\cite{xbox_diagram}.}
 	\label{xbox_diagram}
 \end{figure}
 
 \section{Cellbots Application}
-The D-Pad and the tilt controls were downloaded to the phone as part of a single app called Cellbots. Cellbots is an open source Android application, available for free online or in the Android Market. The app comes with four control schemes, including the D-Pad controls and the tilt controls (Figure~\ref{cellbots}). It also included voice controls and an on-screen Atari-style joystick which were not used in the experiments but could be utilized in future research.
+The D-Pad and the tilt controls were downloaded to the phone as part of a single app called Cellbots. Cellbots is an open source Android application, available for free online or in the Android Market. The app comes with four control schemes, including the D-Pad controls and the tilt controls (Figure~\ref{cellbots}). It also included voice controls and an on-screen Atari-style joystick which were not used in the experiments but could be utilized in future research\cite{cellbots}.
 
 \begin{figure}
 	\centering
@@ -149,7 +149,7 @@ The tilt controls use the phone's accelerometers to control the robot. The user 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{images/acceleration_axes}
-	\caption{The smartphone's x, y, and z axes.}
+	\caption{The smartphone's x, y, and z axes. Courtesy of Apple, Inc.\cite{acceleration}}
 	\label{acceleration_axes} 
 \end{figure}
 
@@ -163,7 +163,7 @@ To recognize the gestures using accelerometers only, I turned to another open so
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{images/gesture_framework}
-	\caption{The GestureTrainer architecture. The Cellbots app was modified to include Gesture Recognition Service, Gesture Recorder, and Gesture Classifier, making it a Gesture Controlled Android Application}
+	\caption{The GestureTrainer architecture. The Cellbots app was modified to include Gesture Recognition Service, Gesture Recorder, and Gesture Classifier, making it a Gesture Controlled Android Application. Courtesy of Robert Nesselrath\cite{gesture_diagram}.}
 	\label{gesture_framework}
 \end{figure}
 
@@ -224,9 +224,9 @@ The track used in the experiments is based on a beginner's time trial circuit fr
 
 \begin{figure}
 	\centering
-	\subfloat[Mario Circuit, as seen in the video game ``Mario Kart Wii".]{\includegraphics[width=0.3\textwidth]{images/mario_circuit_screenshot}}
+	\subfloat[Mario Circuit, as seen in the video game ``Mario Kart Wii". Courtesy of http://smashbros.com\cite{mario_color}.]{\includegraphics[width=0.3\textwidth]{images/mario_circuit_screenshot}}
 	~
-	\subfloat[The original floor plan for the course used in the study. It was later scaled to be appropriate for the size of the Roomba and the lab space in which the experiment took place.]{\includegraphics[width=0.3\textwidth]{images/MarioCircuitLayout}}
+	\subfloat[The original floor plan for the course used in the study. It was later scaled to be appropriate for the size of the Roomba and the lab space in which the experiment took place. Courtesy of Super Mario Wiki\cite{mario_bw}.]{\includegraphics[width=0.3\textwidth]{images/MarioCircuitLayout}}
 	\caption{Comparison of the original Mario Circuit track with the course used in the experiments.}
 	\label{mario_circuit}
 \end{figure}
@@ -252,7 +252,7 @@ Finally, the questionnaire asks participants to rank controllers according to wh
 When subjects arrived, they were first briefed on the purpose of the experiments. Every subject tried the controllers in a randomized order. A short period was allowed for the subject to get used to the controller before beginning the time trial course. The subject completed three timed laps around the course. Subjects were allowed to move between several locations outside the track during a run of the course, but were not allowed to touch the robot or follow it closely. The number of times the robot went outside the boundaries was recorded, along with the number of ``mistake acknowledgements". I defined ``mistake acknowledgements" as a physical or verbal cue that the subject performed a command they did not intend. Examples of mistake acknowledgements include stamping one's foot, shaking one's head, statements like ``No" and ``Oops", and swearing. After every run, the subject was informed of his/her time with that controller. Immediately after all four of the time trials were finished, the subject filled out the questionnaire. 
 
 \chapter{Results}
-In this chapter I will present the results of the experiments and questionnaire. First, a breakdown of the empirical data from the time trials is given, followed by the data from the questionnaire. Finally, I provide my analysis of both sets of data and present some hypotheses based on the combined data.
+In this chapter I will present the results of the experiments and questionnaire. First, a breakdown of the empirical data from the time trials is given, followed by the data from the questionnaire. Finally, I provide an analysis of both sets of data and present some hypotheses based on the combined data.
 
 \section{Time Trials}
 For the time trials, I recorded the time of each lap, the total time taken to complete the course, the number of ``line faults" (robot crossing out of the boundaries), and ``mistake acknowledgements" (defined in Section 4.4). The averages for each of these values are presented in Table~\ref{averages}. It should be noted that there were several subjects with times more than 2 standard deviations from the mean (3 in some cases). Because of the small sample size, their data was not excluded from the calculations. The full raw data can be found in the Appendix.
@@ -357,6 +357,7 @@ Based on the data and analysis, gesture-based controls should continue to be exp
 
 \pagestyle{myheadings}
 \markright{}
+\addcontentsline{toc}{chapter}{Appendix}
 \chapter*{Appendix}
 \section*{Gesture Recognition Code}
 This is the portion of the GestureTrainer/Cellbots code that calculates the distance between two Gestures, $a$ and $b$. The Gesture class is essentially an object wrapper for \texttt{String label},which represents the Gesture's name, and \texttt{List<float[]> values}, which represents the stream of $(x, y, z)$ values recorded.
@@ -372,11 +373,13 @@ This is the portion of the GestureTrainer/Cellbots code that calculates the dist
 \lstinputlisting{DTWAlgorithm.java}
 
 \section*{Time Trials Raw Data}
+Below is the raw data from the time trials. Every subject tried the course with every controller, though there was a malfunction that prevented several people from completing three laps. The standard deviations for time, line faults, and mistake acknowledgements are provided for reference.\\
 \makebox{\includegraphics[page=1, width=\textwidth]{data.pdf}}
 \makebox{\includegraphics[page=2, width=\textwidth]{data.pdf}}
 \includepdf[pages=3-last, nup=1x2, pagecommand={\thispagestyle{myheadings} \markright{}}, noautoscale=true, width=\textwidth]{data.pdf}
 
-\section*{Questionnaire}
-\makebox{\includegraphics[page=1, width=1.05\textwidth]{Questionnaire.pdf}}
+\section*{Questionnaire Data}
+What follows is the data from the SurveyMonkey questionnaire. The short answers provided by each subject are listed at the end.\\
+\makebox{\includegraphics[page=1, width=0.9\textwidth]{Questionnaire.pdf}}
 \includepdf[pages=2-last, pagecommand={\thispagestyle{myheadings} \markright{}}, noautoscale=true, width=1.05\textwidth]{Questionnaire.pdf}
 \end{document}

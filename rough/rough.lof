@@ -5,12 +5,12 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {A Roomba 560}}}{6}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {A Samsung Galaxy S II}}}{6}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {An XBOX 360 controller}}}{6}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The XBOX 360 control scheme. The left analog stick controls left and right turns, while the triggers control forward and backward movement.\relax }}{7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The XBOX 360 control scheme. The left analog stick controls left and right turns, while the triggers control forward and backward movement. Courtesy of http://game-machines.com\cite {xbox_diagram}.\relax }}{7}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Two of the screens from Cellbots, D-Pad and tilt.\relax }}{8}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {The D-Pad controls. Each of the four directional buttons cause the robot to move.}}}{8}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {The tilt controls. Holding the center button and tilting the phone causes the robot to move.}}}{8}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The smartphone's x, y, and z axes.\relax }}{9}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces The GestureTrainer architecture. The Cellbots app was modified to include Gesture Recognition Service, Gesture Recorder, and Gesture Classifier, making it a Gesture Controlled Android Application\relax }}{10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The smartphone's x, y, and z axes. Courtesy of Apple, Inc.\cite {acceleration}\relax }}{9}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The GestureTrainer architecture. The Cellbots app was modified to include Gesture Recognition Service, Gesture Recorder, and Gesture Classifier, making it a Gesture Controlled Android Application. Courtesy of Robert Nesselrath\cite {gesture_diagram}.\relax }}{10}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces The gesture-based controller screen added to Cellbots. It uses the code and algorithms from GestureTrainer to perform gesture recognition, and also has a \texttt {STOP} button.\relax }}{13}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces The four gestures defined in the gesture-based application.\relax }}{14}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\texttt {FORWARD} gesture (high to low).}}}{14}
@@ -19,8 +19,8 @@
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\texttt {RIGHT} gesture (left to right).}}}{14}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of the original Mario Circuit track with the course used in the experiments.\relax }}{16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mario Circuit, as seen in the video game ``Mario Kart Wii".}}}{16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {The original floor plan for the course used in the study. It was later scaled to be appropriate for the size of the Roomba and the lab space in which the experiment took place.}}}{16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mario Circuit, as seen in the video game ``Mario Kart Wii". Courtesy of http://smashbros.com\cite {mario_color}.}}}{16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {The original floor plan for the course used in the study. It was later scaled to be appropriate for the size of the Roomba and the lab space in which the experiment took place. Courtesy of Super Mario Wiki\cite {mario_bw}.}}}{16}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces The numbers 1-4 indicate rank given to the controller for using it to accomplish a critical task. The XBOX 360 controller was the most popular for accomplishing a critical task; the gesture-based controls were the least popular.\relax }}{22}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces The numbers 1-4 indicate rank given to the controller for using it for two hours continuously. The XBOX 360 controller was the most popular for using continuously for two hours; the gesture-based controls were the least popular.\relax }}{23}

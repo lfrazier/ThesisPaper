@@ -1,5 +1,16 @@
 \begin{thebibliography}{10}
 
+\bibitem{acceleration}
+Inc. Apple.
+\newblock Orientation of the device axes, 2010.
+
+\bibitem{cellbots}
+Cellbots.com.
+\newblock Cellbots android application, 2010.
+
+\bibitem{mario_color}
+Smash~Bros. Dojo, 2007.
+
 \bibitem{GoodrichOlsen}
 M.A. Goodrich and Jr. Olsen, D.R.
 \newblock Seven principles of efficient human robot interaction.
@@ -13,6 +24,10 @@ Cheng Guo and Ehud Sharlin.
 \newblock In {\em Proceedings of the twenty-sixth annual SIGCHI conference on
   Human factors in computing systems}, CHI '08, pages 121--130, New York, NY,
   USA, 2008. ACM.
+
+\bibitem{xbox_diagram}
+http://game machines.com.
+\newblock Xbox 360 controller, 2012.
 
 \bibitem{iRobot}
 iRobot Corporation.
@@ -50,6 +65,10 @@ Robert Nesselrath.
 \newblock Takg - ein toolkit zur automatischen klassifikation von gesten.
 \newblock Master's thesis, University of Saarland, 2008.
 
+\bibitem{gesture_diagram}
+Robert Nesselrath.
+\newblock The gesturetrainer architecture., 2010.
+
 \bibitem{VisualSignals}
 Department of~the Army.
 \newblock Visual signals (fm 21-60), 1987.
@@ -75,6 +94,9 @@ Stefan Waldherr, Roseli Romero, and Sebastian Thrun.
 \newblock A gesture based interface for human-robot interaction.
 \newblock {\em Autonomous Robots}, 9:151--173, 2000.
 \newblock 10.1023/A:1008918401478.
+
+\bibitem{mario_bw}
+Super~Mario Wiki, 2010.
 
 \bibitem{YancoDrury}
 H.A. Yanco and J.~Drury.
