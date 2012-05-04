@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt, letterpaper]{report}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -8,15 +8,21 @@
 \usepackage{listings}
 \usepackage{colortbl}
 \usepackage{longtable}
-\usepackage[final]{pdfpages}
 \usepackage{float}
+\usepackage{color}
+\pagecolor{white}
+\usepackage[final]{pdfpages}
+\usepackage{setspace}
+\doublespacing
+\usepackage{geometry}
+\geometry{top=1in, bottom=1in, left=1.5in, right=1in, includehead, includefoot}
 \author{Lauren Frazier}
 \title{Evaluation of Gesture-Based Controls for Robotic Systems}
 \begin{document}
 
 \begin{titlepage}
 \begin{center}
-{ \Large EVALUATION OF GESTURE-BASED CONTROLS FOR ROBOTIC SYSTEMS } \\[1cm]
+{ \Large EVALUATION OF GESTURE-BASED CONTROLS FOR ROBOTIC SYSTEMS} \\[1cm]
 
 {\Large Lauren E. Frazier} \\[1cm]
 
@@ -26,44 +32,34 @@ in \\[1cm]
 
 {\Large Computer and Information Science}\\[1.5cm]
 
-Presented to the Faculties of the University of Pennsylvania in Partial Fulfillment of the Requirements for the Degree of Master of Science in Engineering\\[1cm]
+{\normalsize Presented to the Faculties of the University of Pennsylvania in Partial\\ 
+Fulfillment of the Requirements for the Degree of Master of Science in Engineering}\\[0.75cm]
 
-2012 \\[2.5cm]
+2012 \\[1.5cm]
 
+\singlespacing
 \rule{0.6\linewidth}{0.1mm} \\
 Norman I. Badler\\
-Supervisor of Thesis \\[2.5cm]
+Supervisor of Thesis \\[2cm]
 
 \rule{0.6\linewidth}{0.1mm} \\
 Jianbo Shi\\
 Graduate Group Chairperson
 \end{center}
 \end{titlepage}
+\doublespacing
 
-
-%%%%%%%%%%%%%%%%%%%%%%% TODO LIST %%%%%%%%%%%%%%%%%%%%%%%%%%
-%\newcommand{\todo}[1]{
-%    \addcontentsline{tdo}{todo}{\protect{#1}}
-%    \marginpar{#1}
-%}
-%
-%\makeatletter \newcommand \listoftodos{\section*{Todo list} \@starttoc{tdo}}
-%  \newcommand\l@todo[2]
-%    {\par\noindent \textit{#2}, \parbox{10cm}{#1}\par} \makeatother
-    
-    
-%\listoftodos
-%%%%%%%%%%%%%%%%%%%%% END TODO LIST %%%%%%%%%%%%%%%%%%%%%%%%%
-
-\setcounter{page}{1}
 \pagenumbering{roman}
+\pagestyle{myheadings}
+\markright{}
 \tableofcontents
+\setcounter{page}{2}
 \listoftables
 \listoffigures
 
 \chapter*{Acknowledgements}
 \addcontentsline{toc}{chapter}{Acknowledgements}
-These are acknowledgements.
+I would like to thank Prof. Norm Badler for advising work on this thesis, as well as Prof. Kostas Daniilidis (CIS, University of Pennsylvania) and Prof. Steve Lane (CIS, University of Pennsylvania) for serving on the thesis committee. I would also like to thank Dr. Mubbasir Kapadia for providing help with the experiment design , Daniel Barber (Institute of Simulation and Training, University of Central Florida), for providing help with testing the gesture-based controls, and Robert Nesselrath  (German Research Center for Artificial Intelligence) for providing the GestureTrainer code.
 
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
@@ -71,7 +67,6 @@ Robotic control systems are becoming more common, especially in the military, an
 The work in \cite{Varcholik_Barber_Nicholson_2008} describes a gesture based control system that uses the Nintendo Wiimote to determine arm/hand gestures and control a robot. I propose to create a gesture based system using a smartphone and conduct an experiment similar to the work in \cite{Varcholik_Barber_Nicholson_2008}, collecting survey data from the participants on the the effectiveness and ease of use of each system. This thesis aims to test the effectiveness/ease of use of smartphone gesture-based robotic control systems vs. traditional control systems.
 
 \chapter{Introduction}
-\pagestyle{headings}
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
@@ -122,7 +117,7 @@ The robot in question is an iRobot Roomba 560 vacuum  cleaner. None of the four 
 \end{figure}
 
 \section{XBOX 360 Controller}
-The XBOX 360 controls for the Roomba are written in Python (see Appendix). The program uses a library called RoombaSCI to communicate with the Roomba via Bluetooth. RoombaSCI is a Python wrapper for iRobot's Serial Command Interface Specification, which allows commands to be sent to the Roomba through its serial port. RoombaSCI abstracts tasks like setting up the connection and sending bytes to specific motors into commands like \texttt{FORWARD}, \texttt{STOP}, and \texttt{SPIN LEFT} \cite{RoombaSCI}. It also allows the programmer to set the speed of the Roomba within the range allowed by the hardware (-500 - 500 mm/s). \cite{iRobot}
+The XBOX 360 controls for the Roomba are written in Python (see Appendix). The program uses a library called RoombaSCI to communicate with the Roomba via Bluetooth. RoombaSCI is a Python wrapper for iRobot's Serial Command Interface Specification, which allows commands to be sent to the Roomba through its serial port. RoombaSCI abstracts tasks like setting up the connection and sending bytes to specific motors into commands like \texttt{FORWARD}, \texttt{STOP}, and \texttt{SPIN LEFT} \cite{RoombaSCI}. It also allows the programmer to set the speed of the Roomba within the range allowed by the hardware (-500 - 500 mm/s)\cite{iRobot}.
 
 A RooTooth bluetooth-serial adapter was used to communicate with the computer wirelessly. The Pygame library is also used to properly capture the input from the controller. 
 
@@ -229,9 +224,9 @@ The track used in the experiments is based on a beginner's time trial circuit fr
 
 \begin{figure}
 	\centering
-	\subfloat[Mario Circuit, as seen in the video game ``Mario Kart Wii".]{\includegraphics[width=0.5\textwidth]{images/mario_circuit_screenshot}}
+	\subfloat[Mario Circuit, as seen in the video game ``Mario Kart Wii".]{\includegraphics[width=0.3\textwidth]{images/mario_circuit_screenshot}}
 	~
-	\subfloat[The original floor plan for the course used in the study. It was later scaled to be appropriate for the size of the Roomba and the lab space in which the experiment took place.]{\includegraphics[width=0.5\textwidth]{images/MarioCircuitLayout}}
+	\subfloat[The original floor plan for the course used in the study. It was later scaled to be appropriate for the size of the Roomba and the lab space in which the experiment took place.]{\includegraphics[width=0.3\textwidth]{images/MarioCircuitLayout}}
 	\caption{Comparison of the original Mario Circuit track with the course used in the experiments.}
 	\label{mario_circuit}
 \end{figure}
@@ -360,16 +355,28 @@ Based on the data and analysis, gesture-based controls should continue to be exp
 \bibliographystyle{plain}
 \bibliography{rough}
 
-\clearpage
-\pagestyle{plain}
+\pagestyle{myheadings}
+\markright{}
 \chapter*{Appendix}
 \section*{Gesture Recognition Code}
 This is the portion of the GestureTrainer/Cellbots code that calculates the distance between two Gestures, $a$ and $b$. The Gesture class is essentially an object wrapper for \texttt{String label},which represents the Gesture's name, and \texttt{List<float[]> values}, which represents the stream of $(x, y, z)$ values recorded.
-\lstset{language=Java, breaklines=true, tabsize=2}
+
+\singlespacing
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{language=Java, breaklines=true, tabsize=2,  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  basicstyle=\footnotesize}
 \lstinputlisting{DTWAlgorithm.java}
 
 \section*{Time Trials Raw Data}
+\makebox{\includegraphics[page=1, width=\textwidth]{data.pdf}}
+\makebox{\includegraphics[page=2, width=\textwidth]{data.pdf}}
+\includepdf[pages=3-last, nup=1x2, pagecommand={\thispagestyle{myheadings} \markright{}}, noautoscale=true, width=\textwidth]{data.pdf}
 
-\section*{Questionnaire Data}
-%\includepdf{Questionnaire.pdf}
+\section*{Questionnaire}
+\makebox{\includegraphics[page=1, width=1.05\textwidth]{Questionnaire.pdf}}
+\includepdf[pages=2-last, pagecommand={\thispagestyle{myheadings} \markright{}}, noautoscale=true, width=1.05\textwidth]{Questionnaire.pdf}
 \end{document}
