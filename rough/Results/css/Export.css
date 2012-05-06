@@ -1,0 +1,81 @@
+﻿body {font:12px/1.5 arial,verdana,helvetica,sans-serif;padding:0px;margin-top:10px;}
+
+.rsltsmry {width:100%;border:1px solid #000;margin-bottom:20px;}
+.rsltsmry th,.rsltsmry td {padding:8px;}
+.rsltsmry thead .hdr {text-align:left;}
+
+.rsltsmry thead th,.rsltsmry tfoot td {background-color:#ddd;}
+.rsltsmry tbody td {background-color:#eee;}
+
+.rsltsmry th.dflt {background-color:#dee9f7;}
+.rsltsmry th.cnt,
+.rsltsmry th.freq,
+.rsltsmry th.avg,
+.rsltsmry th.sum {background-color:#cdd8e6;width:70px;}
+
+.rsltsmry td.cnt,
+.rsltsmry td.freq {background-color:#dee9f7;text-align:right;}
+.rsltsmry td.answ {background-color:#cdd8e6;text-align:right;}
+
+.rsltsmry th.col {background-color:#dee9f7;}
+.rsltsmry th.answ {background-color:#cdd8e6;text-align:right;font-weight:bold;font-style:italic;white-space:nowrap;}
+.rsltsmry th.skip {background-color:#ddd;text-align:right;font-weight:bold;font-style:italic;white-space:nowrap;width:98%;}
+
+.rsltsmry td.skip,
+.rsltsmry td.avg,
+.rsltsmry td.sum {text-align:right;}
+.rsltsmry td.mfreq {text-align:center;}
+
+.rsltsmry td.mfreqtop {background-color:#ddd;font-weight:bold;text-align:center;}
+.rsltsmry td.avgtop,
+.rsltsmry td.sumtop {background-color:#ddd;font-weight:bold;text-align:right;}
+.rsltsmry td.cnttop,
+.rsltsmry td.freqtop {background-color:#cdd8e6;text-align:right;font-weight:bold;}
+
+.rsltsmry tbody td.rowLabel {text-align:right;}
+
+.rsltsmry tfoot div.spacer {width:200px;}
+.rsltsmry tfoot td.skip div.spacer {width:58px;}
+
+.rsltsmry thead th.ct, .rsltsmry th.ct, .rsltsmry td.ct {background-color:#cce5cd;text-align:center;}
+.rsltsmry td.ctfreq {background-color:#def7df;text-align:center;}
+.rsltsmry td.ctfreqtop {background-color:#cce5cd;text-align:center;font-weight:bold;}
+.rsltsmry thead th.space, .rsltsmry thead th.ct {width:50%;}
+
+tr.smry td {background-color:#ddd;}
+tr.smry td.cnt,
+tr.smry td.freq {background-color:#cdd8e6;}
+.rsltsmry div.freqbar {border:1px solid #183154;margin-right:-6px;background:url('../i/spacer.gif');}
+
+.rsltsmry td.grp {padding:0px;background-color:#fff;}
+.rsltsmry td.grp table {width:100%;margin:-1px 0px;}
+.rsltsmry td.grp th.grplbl {background-color:#dee9f7;text-align:left;}
+.rsltsmry td.grp th.dflt div.spacer {width:200px;}
+
+img {border:none;}
+a.itBtn, a.TextBtn, a.TextBtn_disabled {font:11px/2.0em verdana;color:#222;text-decoration:none;text-align:center;display:inline;vertical-align:baseline;margin-left:3px;padding:3px;border:1px solid #666;overflow:hidden;cursor:pointer;background:#d3d3d3 url('../i/grygrad.gif') repeat-x scroll 0 0;}
+a.itBtn:hover, a.TextBtn:hover {background:url('../i/grygrad.gif') 0px -20px repeat-x;background-color:#F3F3F3;}
+a.TextBtn_disabled {color:#aaa;border:1px solid #aaa;}
+.rsltsmry a.TextBtn {display:block;float:right;margin-left:6px;width:50px;vertical-align:middle;padding:3px 2px 2px;}
+.rsltsmry td.rowLabel a.TextBtn {float:left;margin-left:0px;}
+html>body a.TextBtn {height:auto;}
+.ct a.TextBtn {float:none;margin:6px auto;}
+
+.rsltsmry a.TextBtn, .rsltsmry a.TextBtn_disabled {display:block;width:4.5em;height:1.4em;line-height:1.4em;}
+.ct a.TextBtn, .ct a.TextBtn_disabled {margin:4px auto 0 auto;float:none;}
+a.TextBtn img.view, a.TextBtn_disabled img.view {vertical-align:middle;line-height:1.4em;}
+a.TextBtn img.view {background:url('../i/comment_on.gif') no-repeat 0 0;padding-right:2px;}
+a.TextBtn_disabled img.view {background:url('../i/comment_off.gif') no-repeat 0 0;padding-right:2px;}
+.ct a.TextBtn_disabled {cursor:default;}
+
+
+.rsltsmry thead th div.btns {float:right;}
+div.btns a.TextBtn {margin:auto 6px;}
+.hdr {clear:right;}
+
+.rsltsmry thead th.hidden {background-color:#ddd;}
+
+/******************************************************/
+
+.NormBtn {cursor:pointer;font:12px/2.5em Verdana;text-decoration:none;text-align:center;display:inline;vertical-align:baseline;padding:5px;padding-left:7px;overflow:hidden;color:#222;background:url('../i/grygradlarge.gif') 0px 0px repeat-x;background-color:#777;border:1px solid #777;border-bottom:1px solid #777;}
+a.NormBtn:hover{background:url('../i/grygradlarge.gif') 0px -50px repeat-x;}
