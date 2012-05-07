@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  6 MAY 2012 17:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  7 MAY 2012 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,36 +634,37 @@ Underfull \hbox (badness 1097) in paragraph at lines 229--229
 \OT1/cmr/m/n/10 for the course used in the
  []
 
-[16 <./images/mario_circuit_screenshot.jpg> <./images/MarioCircuitLayout.png>]
+[16] [17 <./images/mario_circuit_screenshot.jpg> <./images/MarioCircuitLayout.p
+ng>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 239.
 
-
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 239.
- [17] [18]
+ [18]
+[19]
 Chapter 5.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19
+[20
 
-] [20] [21] <images/sm_50.png, id=120, 602.25pt x 451.6875pt>
+] [21] [22] <images/sm_50.png, id=123, 602.25pt x 451.6875pt>
 File: images/sm_50.png Graphic file (type png)
 
 <use images/sm_50.png>
 Package pdftex.def Info: images/sm_50.png used on input line 299.
 (pdftex.def)             Requested size: 325.215pt x 243.92139pt.
- [22 <./images/sm_50.png>]
-<images/sm_51.png, id=125, 602.25pt x 451.6875pt>
+ [23 <./images/sm_50.png>]
+<images/sm_51.png, id=129, 602.25pt x 451.6875pt>
 File: images/sm_51.png Graphic file (type png)
  <use images/sm_51.png>
 Package pdftex.def Info: images/sm_51.png used on input line 310.
 (pdftex.def)             Requested size: 325.215pt x 243.92139pt.
 
-<images/sm_52.png, id=126, 602.25pt x 451.6875pt>
+<images/sm_52.png, id=130, 602.25pt x 451.6875pt>
 File: images/sm_52.png Graphic file (type png)
  <use images/sm_52.png>
 Package pdftex.def Info: images/sm_52.png used on input line 319.
@@ -672,7 +673,7 @@ Package pdftex.def Info: images/sm_52.png used on input line 319.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/sm_53.png, id=127, 602.25pt x 451.6875pt>
+<images/sm_53.png, id=131, 602.25pt x 451.6875pt>
 File: images/sm_53.png Graphic file (type png)
  <use images/sm_53.png>
 Package pdftex.def Info: images/sm_53.png used on input line 328.
@@ -681,21 +682,21 @@ Package pdftex.def Info: images/sm_53.png used on input line 328.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23 <./images/sm_51.png>] [24 <./images/sm_52.png>] [25 <./images/sm_53.png>]
-[26] [27]
+[24 <./images/sm_51.png>] [25 <./images/sm_52.png>] [26 <./images/sm_53.png>]
+[27] [28]
 Chapter 6.
-[28
+[29
 
-] (./rough.bbl [29] [30
+] (./rough.bbl [30] [31
 
-] [31]) [32]
+] [32]) [33]
 (/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 (./DTWAlgorithm.java
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
- [33
+ [34
 
 ]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 32.
@@ -705,557 +706,765 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 32.
- [34])
-<data.pdf, id=171, page=1, 682.41963pt x 386.50891pt>
+ [35])
+<data.pdf, id=175, page=1, 682.41963pt x 386.50891pt>
 File: data.pdf Graphic file (type pdf)
  <use data.pdf, page 1>
-Package pdftex.def Info: data.pdf, page1 used on input line 377.
+Package pdftex.def Info: data.pdf, page1 used on input line 381.
 (pdftex.def)             Requested size: 433.62001pt x 245.59557pt.
 
-<data.pdf, id=172, page=2, 677.85712pt x 378.68748pt>
+<data.pdf, id=176, page=2, 677.85712pt x 378.68748pt>
 File: data.pdf Graphic file (type pdf)
  <use data.pdf, page 2>
-Package pdftex.def Info: data.pdf, page2 used on input line 378.
+Package pdftex.def Info: data.pdf, page2 used on input line 382.
 (pdftex.def)             Requested size: 433.62001pt x 242.24359pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--379
+Underfull \hbox (badness 10000) in paragraph at lines 380--383
 
  []
 
-[35] [36 <./data.pdf> <./data.pdf>]
-<data.pdf, id=208, page=3, 671.3393pt x 370.86606pt>
+[36] [37 <./data.pdf> <./data.pdf>]
+<data.pdf, id=211, page=3, 671.3393pt x 370.86606pt>
 File: data.pdf Graphic file (type pdf)
  <use data.pdf, page 3>
-Package pdftex.def Info: data.pdf, page3 used on input line 379.
+Package pdftex.def Info: data.pdf, page3 used on input line 383.
 (pdftex.def)             Requested size: 671.33765pt x 370.86514pt.
 File: data.pdf Graphic file (type pdf)
 
 <use data.pdf, page 3>
-Package pdftex.def Info: data.pdf, page3 used on input line 379.
+Package pdftex.def Info: data.pdf, page3 used on input line 383.
 (pdftex.def)             Requested size: 671.33765pt x 370.86514pt.
 File: data.pdf Graphic file (type pdf)
  <use data.pdf, page 3>
-Package pdftex.def Info: data.pdf, page3 used on input line 379.
+Package pdftex.def Info: data.pdf, page3 used on input line 383.
 (pdftex.def)             Requested size: 671.33765pt x 370.86514pt.
 
-<data.pdf, id=209, page=4, 683.07141pt x 389.11603pt>
+<data.pdf, id=212, page=4, 683.07141pt x 389.11603pt>
 File: data.pdf Graphic file (type pdf)
  <use data.pdf, page 4>
-Package pdftex.def Info: data.pdf, page4 used on input line 379.
+Package pdftex.def Info: data.pdf, page4 used on input line 383.
 (pdftex.def)             Requested size: 683.06975pt x 389.11507pt.
 File: data.pdf Graphic file (type pdf)
 
 <use data.pdf, page 4>
-Package pdftex.def Info: data.pdf, page4 used on input line 379.
+Package pdftex.def Info: data.pdf, page4 used on input line 383.
 (pdftex.def)             Requested size: 683.06975pt x 389.11507pt.
 File: data.pdf Graphic file (type pdf)
  <use data.pdf, page 3>
-Package pdftex.def Info: data.pdf, page3 used on input line 379.
+Package pdftex.def Info: data.pdf, page3 used on input line 383.
 (pdftex.def)             Requested size: 671.33765pt x 370.86514pt.
 File: data.pdf Graphic file (type pdf)
  <use data.pdf, page 4>
-Package pdftex.def Info: data.pdf, page4 used on input line 379.
+Package pdftex.def Info: data.pdf, page4 used on input line 383.
 (pdftex.def)             Requested size: 683.06975pt x 389.11507pt.
- [37 <./data.pdf> <./data.pdf>] <Questionnaire.pdf, id=213, page=1, 614.295pt x
+ [38 <./data.pdf> <./data.pdf>] <Questionnaire.pdf, id=216, page=1, 614.295pt x
  794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 1>
-Package pdftex.def Info: Questionnaire.pdf, page1 used on input line 383.
+Package pdftex.def Info: Questionnaire.pdf, page1 used on input line 387.
 (pdftex.def)             Requested size: 390.25536pt x 505.04295pt.
- [38 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=238, page=2, 614.295pt x 794.97pt>
+ [39 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=241, page=2, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 2>
-Package pdftex.def Info: Questionnaire.pdf, page2 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page2 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 2>
-Package pdftex.def Info: Questionnaire.pdf, page2 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page2 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 2>
-Package pdftex.def Info: Questionnaire.pdf, page2 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page2 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 2>
-Package pdftex.def Info: Questionnaire.pdf, page2 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page2 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [39 <./Questionnaire.pdf>] <Questionnaire.pdf, id=249, page=3, 614.295pt x 794
+ [40 <./Questionnaire.pdf>] <Questionnaire.pdf, id=252, page=3, 614.295pt x 794
 .97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 3>
-Package pdftex.def Info: Questionnaire.pdf, page3 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page3 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 3>
-Package pdftex.def Info: Questionnaire.pdf, page3 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page3 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 3>
-Package pdftex.def Info: Questionnaire.pdf, page3 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page3 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [40 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=256, page=4, 614.295pt x 794.97pt>
+ [41 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=260, page=4, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 4>
-Package pdftex.def Info: Questionnaire.pdf, page4 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page4 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 4>
-Package pdftex.def Info: Questionnaire.pdf, page4 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page4 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 4>
-Package pdftex.def Info: Questionnaire.pdf, page4 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page4 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [41 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=264, page=5, 614.295pt x 794.97pt>
+ [42 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=267, page=5, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 5>
-Package pdftex.def Info: Questionnaire.pdf, page5 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page5 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 5>
-Package pdftex.def Info: Questionnaire.pdf, page5 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page5 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 5>
-Package pdftex.def Info: Questionnaire.pdf, page5 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page5 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [42 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=280, page=6, 614.295pt x 794.97pt>
+ [43 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=283, page=6, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 6>
-Package pdftex.def Info: Questionnaire.pdf, page6 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page6 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 6>
-Package pdftex.def Info: Questionnaire.pdf, page6 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page6 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 6>
-Package pdftex.def Info: Questionnaire.pdf, page6 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page6 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [43 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=290, page=7, 614.295pt x 794.97pt>
+ [44 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=293, page=7, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 7>
-Package pdftex.def Info: Questionnaire.pdf, page7 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page7 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 7>
-Package pdftex.def Info: Questionnaire.pdf, page7 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page7 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 7>
-Package pdftex.def Info: Questionnaire.pdf, page7 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page7 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [44 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=299, page=8, 614.295pt x 794.97pt>
+ [45 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=302, page=8, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 8>
-Package pdftex.def Info: Questionnaire.pdf, page8 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page8 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 8>
-Package pdftex.def Info: Questionnaire.pdf, page8 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page8 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 8>
-Package pdftex.def Info: Questionnaire.pdf, page8 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page8 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [45 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=308, page=9, 614.295pt x 794.97pt>
+ [46 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=311, page=9, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 9>
-Package pdftex.def Info: Questionnaire.pdf, page9 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page9 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 9>
-Package pdftex.def Info: Questionnaire.pdf, page9 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page9 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 9>
-Package pdftex.def Info: Questionnaire.pdf, page9 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page9 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [46 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=315, page=10, 614.295pt x 794.97pt>
+ [47 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=319, page=10, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 10>
-Package pdftex.def Info: Questionnaire.pdf, page10 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page10 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 10>
-Package pdftex.def Info: Questionnaire.pdf, page10 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page10 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 10>
-Package pdftex.def Info: Questionnaire.pdf, page10 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page10 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [47 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=325, page=11, 614.295pt x 794.97pt>
+ [48 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=328, page=11, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 11>
-Package pdftex.def Info: Questionnaire.pdf, page11 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page11 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 11>
-Package pdftex.def Info: Questionnaire.pdf, page11 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page11 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 11>
-Package pdftex.def Info: Questionnaire.pdf, page11 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page11 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [48 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=334, page=12, 614.295pt x 794.97pt>
+ [49 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=337, page=12, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 12>
-Package pdftex.def Info: Questionnaire.pdf, page12 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page12 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 12>
-Package pdftex.def Info: Questionnaire.pdf, page12 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page12 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 12>
-Package pdftex.def Info: Questionnaire.pdf, page12 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page12 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [49 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=341, page=13, 614.295pt x 794.97pt>
+ [50 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=344, page=13, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 13>
-Package pdftex.def Info: Questionnaire.pdf, page13 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page13 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 13>
-Package pdftex.def Info: Questionnaire.pdf, page13 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page13 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 13>
-Package pdftex.def Info: Questionnaire.pdf, page13 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page13 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [50 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=350, page=14, 614.295pt x 794.97pt>
+ [51 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=353, page=14, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 14>
-Package pdftex.def Info: Questionnaire.pdf, page14 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page14 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 14>
-Package pdftex.def Info: Questionnaire.pdf, page14 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page14 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 14>
-Package pdftex.def Info: Questionnaire.pdf, page14 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page14 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [51 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=359, page=15, 614.295pt x 794.97pt>
+ [52 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=362, page=15, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 15>
-Package pdftex.def Info: Questionnaire.pdf, page15 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page15 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 15>
-Package pdftex.def Info: Questionnaire.pdf, page15 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page15 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 15>
-Package pdftex.def Info: Questionnaire.pdf, page15 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page15 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [52 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=366, page=16, 614.295pt x 794.97pt>
+ [53 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=370, page=16, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 16>
-Package pdftex.def Info: Questionnaire.pdf, page16 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page16 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 16>
-Package pdftex.def Info: Questionnaire.pdf, page16 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page16 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 16>
-Package pdftex.def Info: Questionnaire.pdf, page16 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page16 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [53 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=376, page=17, 614.295pt x 794.97pt>
+ [54 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=379, page=17, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 17>
-Package pdftex.def Info: Questionnaire.pdf, page17 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page17 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 17>
-Package pdftex.def Info: Questionnaire.pdf, page17 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page17 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 17>
-Package pdftex.def Info: Questionnaire.pdf, page17 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page17 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [54 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=385, page=18, 614.295pt x 794.97pt>
+ [55 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=388, page=18, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 18>
-Package pdftex.def Info: Questionnaire.pdf, page18 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page18 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 18>
-Package pdftex.def Info: Questionnaire.pdf, page18 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page18 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 18>
-Package pdftex.def Info: Questionnaire.pdf, page18 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page18 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [55 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=392, page=19, 614.295pt x 794.97pt>
+ [56 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=395, page=19, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 19>
-Package pdftex.def Info: Questionnaire.pdf, page19 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page19 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 19>
-Package pdftex.def Info: Questionnaire.pdf, page19 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page19 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 19>
-Package pdftex.def Info: Questionnaire.pdf, page19 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page19 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [56 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=404, page=20, 614.295pt x 794.97pt>
+ [57 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=407, page=20, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 20>
-Package pdftex.def Info: Questionnaire.pdf, page20 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page20 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 20>
-Package pdftex.def Info: Questionnaire.pdf, page20 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page20 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 20>
-Package pdftex.def Info: Questionnaire.pdf, page20 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page20 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [57 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=409, page=21, 614.295pt x 794.97pt>
+ [58 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=412, page=21, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 21>
-Package pdftex.def Info: Questionnaire.pdf, page21 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page21 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 21>
-Package pdftex.def Info: Questionnaire.pdf, page21 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page21 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 21>
-Package pdftex.def Info: Questionnaire.pdf, page21 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page21 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [58 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=413, page=22, 614.295pt x 794.97pt>
+ [59 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=417, page=22, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 22>
-Package pdftex.def Info: Questionnaire.pdf, page22 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page22 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 22>
-Package pdftex.def Info: Questionnaire.pdf, page22 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page22 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 22>
-Package pdftex.def Info: Questionnaire.pdf, page22 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page22 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [59 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=418, page=23, 614.295pt x 794.97pt>
+ [60 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=421, page=23, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 23>
-Package pdftex.def Info: Questionnaire.pdf, page23 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page23 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 23>
-Package pdftex.def Info: Questionnaire.pdf, page23 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page23 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 23>
-Package pdftex.def Info: Questionnaire.pdf, page23 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page23 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [60 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=422, page=24, 614.295pt x 794.97pt>
+ [61 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=426, page=24, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 24>
-Package pdftex.def Info: Questionnaire.pdf, page24 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page24 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 24>
-Package pdftex.def Info: Questionnaire.pdf, page24 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page24 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 24>
-Package pdftex.def Info: Questionnaire.pdf, page24 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page24 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [61 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=427, page=25, 614.295pt x 794.97pt>
+ [62 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=430, page=25, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 25>
-Package pdftex.def Info: Questionnaire.pdf, page25 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page25 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 25>
-Package pdftex.def Info: Questionnaire.pdf, page25 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page25 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 25>
-Package pdftex.def Info: Questionnaire.pdf, page25 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page25 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [62 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=431, page=26, 614.295pt x 794.97pt>
+ [63 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=434, page=26, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 26>
-Package pdftex.def Info: Questionnaire.pdf, page26 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page26 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 26>
-Package pdftex.def Info: Questionnaire.pdf, page26 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page26 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 26>
-Package pdftex.def Info: Questionnaire.pdf, page26 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page26 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [63 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=435, page=27, 614.295pt x 794.97pt>
+ [64 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=438, page=27, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 27>
-Package pdftex.def Info: Questionnaire.pdf, page27 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page27 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 27>
-Package pdftex.def Info: Questionnaire.pdf, page27 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page27 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 27>
-Package pdftex.def Info: Questionnaire.pdf, page27 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page27 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [64 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=439, page=28, 614.295pt x 794.97pt>
+ [65 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=443, page=28, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 28>
-Package pdftex.def Info: Questionnaire.pdf, page28 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page28 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 28>
-Package pdftex.def Info: Questionnaire.pdf, page28 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page28 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 28>
-Package pdftex.def Info: Questionnaire.pdf, page28 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page28 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [65 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=444, page=29, 614.295pt x 794.97pt>
+ [66 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=447, page=29, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 29>
-Package pdftex.def Info: Questionnaire.pdf, page29 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page29 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 29>
-Package pdftex.def Info: Questionnaire.pdf, page29 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page29 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 29>
-Package pdftex.def Info: Questionnaire.pdf, page29 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page29 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [66 <./Questionnaire.pdf>]
-<Questionnaire.pdf, id=448, page=30, 614.295pt x 794.97pt>
+ [67 <./Questionnaire.pdf>]
+<Questionnaire.pdf, id=451, page=30, 614.295pt x 794.97pt>
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 30>
-Package pdftex.def Info: Questionnaire.pdf, page30 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page30 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
  <use Questionnaire.pdf, page 30>
-Package pdftex.def Info: Questionnaire.pdf, page30 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page30 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Questionnaire.pdf Graphic file (type pdf)
 
 <use Questionnaire.pdf, page 30>
-Package pdftex.def Info: Questionnaire.pdf, page30 used on input line 384.
+Package pdftex.def Info: Questionnaire.pdf, page30 used on input line 388.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
- [67 <./Questionnaire.pdf>] (./rough.aux) ) 
+ [68 <./Questionnaire.pdf>]
+<modification-approval.pdf, id=455, page=1, 521.21349pt x 536.86945pt>
+File: modification-approval.pdf Graphic file (type pdf)
+
+<use modification-approval.pdf, page 1>
+Package pdftex.def Info: modification-approval.pdf, page1 used on input line 39
+2.
+(pdftex.def)             Requested size: 433.62001pt x 446.65828pt.
+ [69 <./modification-approval.pdf>]
+<irb-modified.pdf, id=480, page=1, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 1>
+Package pdftex.def Info: irb-modified.pdf, page1 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 1>
+Package pdftex.def Info: irb-modified.pdf, page1 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 1>
+Package pdftex.def Info: irb-modified.pdf, page1 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 1>
+Package pdftex.def Info: irb-modified.pdf, page1 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [70 <./irb-modified.pdf>] <irb-modified.pdf, id=490, page=2, 614.295pt x 794.9
+7pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 2>
+Package pdftex.def Info: irb-modified.pdf, page2 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 2>
+Package pdftex.def Info: irb-modified.pdf, page2 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 2>
+Package pdftex.def Info: irb-modified.pdf, page2 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [71 <./irb-modified.pdf>]
+<irb-modified.pdf, id=495, page=3, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 3>
+Package pdftex.def Info: irb-modified.pdf, page3 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 3>
+Package pdftex.def Info: irb-modified.pdf, page3 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 3>
+Package pdftex.def Info: irb-modified.pdf, page3 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [72 <./irb-modified.pdf>]
+<irb-modified.pdf, id=500, page=4, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 4>
+Package pdftex.def Info: irb-modified.pdf, page4 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 4>
+Package pdftex.def Info: irb-modified.pdf, page4 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 4>
+Package pdftex.def Info: irb-modified.pdf, page4 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [73 <./irb-modified.pdf>]
+<irb-modified.pdf, id=505, page=5, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 5>
+Package pdftex.def Info: irb-modified.pdf, page5 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 5>
+Package pdftex.def Info: irb-modified.pdf, page5 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 5>
+Package pdftex.def Info: irb-modified.pdf, page5 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [74 <./irb-modified.pdf>]
+<irb-modified.pdf, id=509, page=6, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 6>
+Package pdftex.def Info: irb-modified.pdf, page6 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 6>
+Package pdftex.def Info: irb-modified.pdf, page6 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 6>
+Package pdftex.def Info: irb-modified.pdf, page6 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [75 <./irb-modified.pdf>]
+<irb-modified.pdf, id=513, page=7, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 7>
+Package pdftex.def Info: irb-modified.pdf, page7 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 7>
+Package pdftex.def Info: irb-modified.pdf, page7 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 7>
+Package pdftex.def Info: irb-modified.pdf, page7 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [76 <./irb-modified.pdf>]
+<irb-modified.pdf, id=517, page=8, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 8>
+Package pdftex.def Info: irb-modified.pdf, page8 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 8>
+Package pdftex.def Info: irb-modified.pdf, page8 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 8>
+Package pdftex.def Info: irb-modified.pdf, page8 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [77 <./irb-modified.pdf>]
+<irb-modified.pdf, id=522, page=9, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 9>
+Package pdftex.def Info: irb-modified.pdf, page9 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 9>
+Package pdftex.def Info: irb-modified.pdf, page9 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 9>
+Package pdftex.def Info: irb-modified.pdf, page9 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [78 <./irb-modified.pdf>]
+<irb-modified.pdf, id=526, page=10, 614.295pt x 794.97pt>
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 10>
+Package pdftex.def Info: irb-modified.pdf, page10 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+ <use irb-modified.pdf, page 10>
+Package pdftex.def Info: irb-modified.pdf, page10 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: irb-modified.pdf Graphic file (type pdf)
+
+<use irb-modified.pdf, page 10>
+Package pdftex.def Info: irb-modified.pdf, page10 used on input line 394.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [79 <./irb-modified.pdf>]
+<consent_form.pdf, id=532, page=1, 614.295pt x 794.97pt>
+File: consent_form.pdf Graphic file (type pdf)
+
+<use consent_form.pdf, page 1>
+Package pdftex.def Info: consent_form.pdf, page1 used on input line 397.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: consent_form.pdf Graphic file (type pdf)
+ <use consent_form.pdf, page 1>
+Package pdftex.def Info: consent_form.pdf, page1 used on input line 397.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: consent_form.pdf Graphic file (type pdf)
+
+<use consent_form.pdf, page 1>
+Package pdftex.def Info: consent_form.pdf, page1 used on input line 397.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: consent_form.pdf Graphic file (type pdf)
+ <use consent_form.pdf, page 1>
+Package pdftex.def Info: consent_form.pdf, page1 used on input line 397.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [80 <./consent_form.pdf>] <consent_form.pdf, id=560, page=2, 614.295pt x 794.9
+7pt>
+File: consent_form.pdf Graphic file (type pdf)
+
+<use consent_form.pdf, page 2>
+Package pdftex.def Info: consent_form.pdf, page2 used on input line 397.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: consent_form.pdf Graphic file (type pdf)
+ <use consent_form.pdf, page 2>
+Package pdftex.def Info: consent_form.pdf, page2 used on input line 397.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: consent_form.pdf Graphic file (type pdf)
+
+<use consent_form.pdf, page 2>
+Package pdftex.def Info: consent_form.pdf, page2 used on input line 397.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+ [81 <./consent_form.pdf>] (./rough.aux) ) 
 Here is how much of TeX's memory you used:
- 7066 strings out of 493633
- 103512 string characters out of 3143378
+ 7113 strings out of 493633
+ 104676 string characters out of 3143378
  394172 words of memory out of 3000000
- 10205 multiletter control sequences out of 15000+200000
+ 10247 multiletter control sequences out of 15000+200000
  12539 words of font info for 49 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  44i,18n,51p,1056b,1655s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmtt12.pfb>
-Output written on rough.pdf (75 pages, 8317316 bytes).
+</usr/local/texlive/2011/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtt12.pfb>
+Output written on rough.pdf (89 pages, 8476959 bytes).
 PDF statistics:
- 491 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
+ 604 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 371 words of extra memory for PDF output out of 10000 (max. 10000000)
 

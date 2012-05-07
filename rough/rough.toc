@@ -9,11 +9,11 @@
 \contentsline {chapter}{\numberline {4}Human Factors Experiment Design}{15}
 \contentsline {section}{\numberline {4.1}Platform and Hardware}{15}
 \contentsline {section}{\numberline {4.2}Track Design}{16}
-\contentsline {section}{\numberline {4.3}Questionnaire Design}{17}
-\contentsline {section}{\numberline {4.4}Experiment Procedure}{18}
-\contentsline {chapter}{\numberline {5}Results}{19}
-\contentsline {section}{\numberline {5.1}Time Trials}{19}
-\contentsline {section}{\numberline {5.2}Questionnaire}{21}
-\contentsline {section}{\numberline {5.3}Analysis and Hypotheses}{24}
-\contentsline {chapter}{\numberline {6}Conclusion}{28}
-\contentsline {chapter}{Appendix}{32}
+\contentsline {section}{\numberline {4.3}Questionnaire Design}{18}
+\contentsline {section}{\numberline {4.4}Experiment Procedure}{19}
+\contentsline {chapter}{\numberline {5}Results}{20}
+\contentsline {section}{\numberline {5.1}Time Trials}{20}
+\contentsline {section}{\numberline {5.2}Questionnaire}{22}
+\contentsline {section}{\numberline {5.3}Analysis and Hypotheses}{25}
+\contentsline {chapter}{\numberline {6}Conclusion}{29}
+\contentsline {chapter}{Appendix}{33}
